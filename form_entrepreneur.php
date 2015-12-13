@@ -43,8 +43,8 @@ require_once('swiftmailer/swift_required.php');
   // Give it a body
 	$the_body=file_get_contents('to_admin_entrepreneur.php');
 
-	$key_array=['{name}','{title}','{company}','{email}','{phone}','{entrepreneur_startups}','{entrepreneur_mentor}','{entrepreneur_demo}','{entrepreneur_comments}'];
-	$value_array=[$_POST['entrepreneur_name'],$_POST['entrepreneur_title'],$_POST['entrepreneur_cname'],$_POST['entrepreneur_email'],$_POST['entrepreneur_phone'],$_POST['entrepreneur_list'],$_POST['entrepreneur_mentor'],$_POST['entrepreneur_demo'],$_POST['entrepreneur_comments']];
+	$key_array=array('{name}','{title}','{company}','{email}','{phone}','{entrepreneur_startups}','{entrepreneur_mentor}','{entrepreneur_demo}','{entrepreneur_comments}');
+	$value_array=array($_POST['entrepreneur_name'],$_POST['entrepreneur_title'],$_POST['entrepreneur_cname'],$_POST['entrepreneur_email'],$_POST['entrepreneur_phone'],$_POST['entrepreneur_list'],$_POST['entrepreneur_mentor'],$_POST['entrepreneur_demo'],$_POST['entrepreneur_comments']);
 	$the_body=str_replace($key_array, $value_array, $the_body);
 
 

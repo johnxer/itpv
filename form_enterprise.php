@@ -43,12 +43,13 @@ require_once('swiftmailer/swift_required.php');
   // Give it a body
 	$the_body=file_get_contents('to_admin_enterprise.php');
 
-	$key_array=['{name}','{title}','{company}','{email}','{phone}','{enterprise_question}'];
-	$value_array=[$_POST['enterprise_name'],$_POST['enterprise_title'],$_POST['enterprise_cname'],$_POST['enterprise_email'],$_POST['enterprise_phone'],$_POST['enterprise_question']];
+	$key_array=array('{name}','{title}','{company}','{email}','{phone}','{enterprise_question}');
+
+	$value_array=array($_POST['enterprise_name'],$_POST['enterprise_title'],$_POST['enterprise_cname'],$_POST['enterprise_email'],$_POST['enterprise_phone'],$_POST['enterprise_question']);
+
 	$the_body=str_replace($key_array, $value_array, $the_body);
 
 
 	$message->setBody($the_body, 'text/html');
 
 	$result = $mailer->send($message);
- 

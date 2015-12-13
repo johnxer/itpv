@@ -43,8 +43,8 @@ require_once('swiftmailer/swift_required.php');
   // Give it a body
 	$the_body=file_get_contents('to_admin_resources.php');
 
-	$key_array=['{name}','{email}','{phone}','{resources_ifocus}','{resources_comments}'];
-	$value_array=[$_POST['resources_name'],$_POST['resources_email'],$_POST['resources_phone'],$_POST['resources_ifocus'],$_POST['resources_comments']];
+	$key_array=array('{name}','{email}','{phone}','{resources_ifocus}','{resources_comments}');
+	$value_array=array($_POST['resources_name'],$_POST['resources_email'],$_POST['resources_phone'],$_POST['resources_ifocus'],$_POST['resources_comments']);
 	$the_body=str_replace($key_array, $value_array, $the_body);
 
 

@@ -43,8 +43,8 @@ require_once('swiftmailer/swift_required.php');
   // Give it a body
 	$the_body=file_get_contents('to_admin_vc.php');
 
-	$key_array=['{name}','{title}','{company}','{email}','{phone}','{vc_ifocus}','{vc_startups}','{vc_mentor}','{vc_demo}','{vc_comments}'];
-	$value_array=[$_POST['vc_name'],$_POST['vc_title'],$_POST['vc_cname'],$_POST['vc_email'],$_POST['vc_phone'],$_POST['vc_ifocus'],$_POST['vc_list'],$_POST['vc_mentor'],$_POST['vc_demo'],$_POST['vc_comments']];
+	$key_array=array('{name}','{title}','{company}','{email}','{phone}','{vc_ifocus}','{vc_startups}','{vc_mentor}','{vc_demo}','{vc_comments}');
+	$value_array=array($_POST['vc_name'],$_POST['vc_title'],$_POST['vc_cname'],$_POST['vc_email'],$_POST['vc_phone'],$_POST['vc_ifocus'],$_POST['vc_list'],$_POST['vc_mentor'],$_POST['vc_demo'],$_POST['vc_comments']);
 	$the_body=str_replace($key_array, $value_array, $the_body);
 
 

@@ -1,3 +1,6 @@
 <?php
 
-	$send_to_admin=['arivas@eagleninja.com', 'johnxer@gmail.com'];
+	$send_to_admin=array('arivas@eagleninja.com', 'johnxer@gmail.com');
+
+
+	?>

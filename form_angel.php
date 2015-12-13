@@ -43,8 +43,8 @@ require_once('swiftmailer/swift_required.php');
   // Give it a body
 	$the_body=file_get_contents('to_admin_angel.php');
 
-	$key_array=['{name}','{title}','{company}','{email}','{phone}','{angel_startups}','{angel_mentor}','{angel_demo}','{angel_comments}'];
-	$value_array=[$_POST['angel_name'],$_POST['angel_title'],$_POST['angel_cname'],$_POST['angel_email'],$_POST['angel_phone'],$_POST['angel_list'],$_POST['angel_mentor'],$_POST['angel_demo'],$_POST['angel_comments']];
+	$key_array=array('{name}','{title}','{company}','{email}','{phone}','{angel_startups}','{angel_mentor}','{angel_demo}','{angel_comments}');
+	$value_array=array($_POST['angel_name'],$_POST['angel_title'],$_POST['angel_cname'],$_POST['angel_email'],$_POST['angel_phone'],$_POST['angel_list'],$_POST['angel_mentor'],$_POST['angel_demo'],$_POST['angel_comments']);
 	$the_body=str_replace($key_array, $value_array, $the_body);
 
 
