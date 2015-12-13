@@ -108,6 +108,22 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.3s;
 }
 
+.btn-primary.disabled,
+.btn-primary[disabled],
+ .btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus{
+    background: #ddd;
+    border-color: #ccc;
+    font-size: 16px;
+    padding: 8px 15px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
 .btn-primary:hover {
     background: transparent;
     border-color: #18C8AE;
@@ -2264,4 +2280,8 @@ textarea {
     margin-top: 30px;
 }
 
+
+.checkbox label, .radio label{
+    font-weight: 300;
+}
 
