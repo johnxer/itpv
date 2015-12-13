@@ -626,6 +626,15 @@ a.navbar-brand strong{
     margin: 0 0 0 0px;
     }
 
+.about-section p a{
+    text-decoration: underline;
+    color: #18C8AE;
+}
+
+.about-section p a:hover{
+    text-decoration: none;
+    color: #18C8AE;
+}
 
 .about-section ul li{
     padding: 0 0 0 20px;

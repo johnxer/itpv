@@ -479,6 +479,8 @@
 <script src="asset/js/map.js"></script>
 <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script src="asset/js/script.js"></script>
+ <script type="text/javascript" src="assets/js/jquery.localscroll-1.2.7-min.js"></script>
+ <script type="text/javascript" src="assets/js/jquery.scrollTo.min.js"></script>
 <script>
 $(document).ready(function(){
 	$("body.home").css('min-height', $(window).height());
@@ -510,6 +512,8 @@ $(document).ready(function(){
   
 $(document).ready(function(){
  
+	$('.about-section p a').localScroll(800);
+
 
       $('#form_enterprise').on('submit', function (e) {
             e.preventDefault();
