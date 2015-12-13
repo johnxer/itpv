@@ -882,7 +882,7 @@ function isValidEmailAddress(emailAddress) {
         }
     })
 
-    if (all_good && isValidEmailAddress($("#hiring_email").val()) && readURL(document.getElementById('hiring_cv')) {
+    if (all_good && isValidEmailAddress($("#hiring_email").val()) && readURL(document.getElementById('hiring_cv'))) {
       $('.form_hiring_submit').removeClass('disabled');
       //$('.important_lm').hide();
     }
