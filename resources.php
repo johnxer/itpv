@@ -85,10 +85,6 @@
                 <div class="modal-body">
                     Message sent!
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default col-sm-12" data-dismiss="modal">Close</button>
-                    
-                </div>
             </div>
 
                 </div>
