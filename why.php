@@ -15,7 +15,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1><strong>Enterprises should not try to <a href="#vc_model">copy the VC model</a>, they should play to their strengths in human capital, domain expertise and distribution </strong><br />Alejandro Rivas-Micoud, ITP Ventures Partner</h1>
+                        <h1><strong>Enterprises should not try to <a class="anchor" href="#vc_model">copy the VC model</a>, they should play to their strengths in human capital, domain expertise and distribution </strong><br />Alejandro Rivas-Micoud, ITP Ventures Partner</h1>
                     </div>
                 </div>
             </div>
@@ -25,7 +25,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p>Large enterprises in every vertical are facing unprecedented <a href="#fintech">challenges</a> from digital disruption, emerging technologies and transformative business models.</p>
+                    <p>Large enterprises in every vertical are facing unprecedented <a class="anchor" href="#fintech">challenges</a> from digital disruption, emerging technologies and transformative business models.</p>
                     <p>Whether it is the retail industry vs e-commerce, the transportation or hotel industry vs the sharing economy, the utility industry vs the rapidly decreasing cost of solar and storage technologies, or the finance industry vs thousands of startups attacking every segment of finance from lending and payments through asset management, no Enterprise can safely consider its traditional competitors as its main threat.</p>
                     <p>At ITP Ventures we apply these lessons to help Enterprises empower employees so that they can become Intrapreneurs. In other words, we help Enterprises leverage their strengths in human capital and domain expertise to deal effectively with the innovations changing their competitive landscape.</p>
                 </div>

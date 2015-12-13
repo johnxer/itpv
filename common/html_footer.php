@@ -74,7 +74,7 @@
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default col-sm-3" data-dismiss="modal">Close</button>
-				<button type="button" class="form_enterprise_submit disabled btn col-sm-6 col-sm-offset-3 pull-right btn-primary">Submit Form</button>
+				<button type="submit" class="form_enterprise_submit disabled btn col-sm-6 col-sm-offset-3 pull-right btn-primary">Submit Form</button>
 			</div>
 			</form>
 			</div>
@@ -99,44 +99,47 @@
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				<h4 class="modal-title" id="myModalLabel">Apply as Entrepreneur</h4>
 			</div>
+			<div class="form_entrepreneur_step_1">
+			<form id="form_entrepreneur" action="form_entrepreneur.php" method="post">
+
 			<div class="modal-body">
-				<form >
+				
 					<div class="form-horizontal">
 						<div class="form-group">
 							<label for="entrepreneur_name" class="col-sm-3 control-label">Name</label>
 							<div class="col-sm-9">
-								<input type="text" class="form-control" id="entrepreneur_name" placeholder="Please enter your name">
+								<input type="text" class="form-control form_entrepreneur_validation" name="entrepreneur_name" id="entrepreneur_name" placeholder="Please enter your name">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="entrepreneur_title" class="col-sm-3 control-label">Title</label>
 							<div class="col-sm-9">
-								<input type="text" class="form-control" id="entrepreneur_title" placeholder="Please enter your title">
+								<input type="text" class="form-control form_entrepreneur_validation" name="entrepreneur_title" id="entrepreneur_title" placeholder="Please enter your title">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="entrepreneur_cname" class="col-sm-3 control-label">Company Name</label>
 							<div class="col-sm-9">
-								<input type="text" class="form-control" id="entrepreneur_cname" placeholder="Please enter your company name">
+								<input type="text" class="form-control form_entrepreneur_validation" name="entrepreneur_cname" id="entrepreneur_cname" placeholder="Please enter your company name">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="entrepreneur_email" class="col-sm-3 control-label">Email</label>
 							<div class="col-sm-9">
-								<input type="email" class="form-control" id="entrepreneur_email" placeholder="Please enter your email">
+								<input type="email" class="form-control form_entrepreneur_validation" name="entrepreneur_email" id="entrepreneur_email" placeholder="Please enter your email">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="entrepreneur_phone" class="col-sm-3 control-label">Tel</label>
 							<div class="col-sm-9">
-								<input type="phone" class="form-control" id="entrepreneur_phone" placeholder="Please enter your phone">
+								<input type="phone" class="form-control form_entrepreneur_validation" name="entrepreneur_phone" id="entrepreneur_phone" placeholder="Please enter your phone">
 							</div>
 						</div>
 					</div>
 					<div class="form-group">
 						<label for="entrepreneur_list" class="control-label">List of startups you have led or co-led</label>
 						<div class="">
-							<textarea placeholder="" class="form-control"  id="entrepreneur_list"></textarea>
+							<textarea placeholder="" class="form-control form_entrepreneur_validation" name="entrepreneur_list" id="entrepreneur_list"></textarea>
 						</div>
 					</div>
 					<div class="form-horizontal">
@@ -162,15 +165,29 @@
 					<div class="form-group">
 						<label for="entrepreneur_comments" class="control-label">Comments</label>
 						<div class="">
-							<textarea placeholder="" class="form-control"  id="entrepreneur_comments"></textarea>
+							<textarea placeholder="" class="form-control form_entrepreneur_validation" name="entrepreneur_comments" id="entrepreneur_comments"></textarea>
 						</div>
 					</div>
-				</form>
+				
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default col-sm-3" data-dismiss="modal">Close</button>
-				<button type="button" class="btn col-sm-6 col-sm-offset-3 pull-right btn-primary">Submit Form</button>
+				<button type="submit" class="btn form_entrepreneur_submit disabled col-sm-6 col-sm-offset-3 pull-right btn-primary">Submit Form</button>
 			</div>
+
+			</form>
+			</div>
+			<div class="form_entrepreneur_step_2" style="display: none;">
+				<div class="modal-body">
+						sadasdsad
+				</div>
+
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default col-sm-12" data-dismiss="modal">Close</button>
+				
+			</div>
+			</div>
+
 		</div>
 	</div>
 </div>
@@ -470,15 +487,13 @@
 <script src="asset/js/jquery-migrate-1.2.1.min.js"></script>
 <script src="asset/bootstrap/js/bootstrap.min.js"></script>
 <script src="asset/js/owl.carousel.min.js"></script>
-<script src="asset/js/jquery.appear.js"></script>
-<script src="asset/js/jquery.fitvids.js"></script>
-<script src="asset/js/jquery.nicescroll.min.js"></script>
 <script src="asset/js/lightbox.min.js"></script>
 <script src="asset/js/count-to.js"></script>
 <script src="asset/js/styleswitcher.js"></script>
+<script src="asset/js/jquery.nicescroll.min.js"></script>
 <script src="asset/js/map.js"></script>
 <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-<script src="asset/js/script.js"></script>
+<!--<script src="asset/js/script.js"></script>-->
 <script>
 $(document).ready(function(){
 	$("body.home").css('min-height', $(window).height());
@@ -507,11 +522,35 @@ $(document).ready(function(){
     }
   }
 
+
+ function validate_entrepreneurForm()
+  {
+    //console.log('xxx');
+    $('.form_entrepreneur_submit').addClass('disabled');
+    //$('.important_lm').show();
+    var all_good=true;
+    
+    $.each($('.form_entrepreneur_validation'), function()
+    {
+        if ($(this).val()=='')
+        {
+          all_good=false;
+          return false;
+        }
+    })
+
+    if (all_good ) {
+      $('.form_entrepreneur_submit').removeClass('disabled');
+      //$('.important_lm').hide();
+    }
+  }
+
+
   
 $(document).ready(function(){
  
 $(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
+  $('a.anchor').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -525,6 +564,9 @@ $(function() {
   });
 });
 
+
+
+// ENTERPRISE FORM 
 
       $('#form_enterprise').on('submit', function (e) {
             e.preventDefault();
@@ -565,6 +607,55 @@ $(function() {
     $('#form_enterprise').submit();
 
   });
+
+
+// END OF ENTERPRISE FORM
+
+
+
+// ENTERPRENEUR FORM
+
+      $('#form_entrepreneur').on('submit', function (e) {
+            e.preventDefault();
+
+            var oldLabel = $('#form_entrepreneur button[type="submit"]').html();
+            $('#form_entrepreneur .form_entrepreneur_submit').prop('disabled', true).text('Sending...');
+
+            $.ajax({
+             type:'POST',
+             url: 'form_entrepreneur.php',
+             data: $('#form_entrepreneur').serialize()})
+                .done(function() {
+                      $('#form_entrepreneur').get(0).reset();
+                      $('.form_entrepreneur_step_1').hide();
+                      $('.form_entrepreneur_step_2').show();
+                });
+
+      });
+
+      $('#form_entrepreneur').on('hidden.bs.modal', function (e) {
+            $('.form_entrepreneur_step_2').hide();
+            $('.form_entrepreneur_step_1').show();
+      });
+
+
+
+  $('.form_entrepreneur_validation').on('change keyup', function()
+  {
+    //console.log('dsdassda');
+    validate_entrepreneurForm();
+  });
+
+ 
+
+  $('.form_entrepreneur_submit').on('click', function()
+  {
+    if ($(this).hasClass('disabled')) return;
+    $('#form_entrepreneur').submit();
+
+  });
+
+
 });
 
 </script>
