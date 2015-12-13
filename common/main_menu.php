@@ -63,25 +63,25 @@
                 
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="<?php echo ($_SERVER['PHP_SELF'] == 'index.php' ? ' active' : '');?>" href="index.php">Home</a>
+                        <a class="<?php echo ($_SERVER['PHP_SELF'] == '/index.php' ? ' active' : '');?>" href="index.php">Home</a>
                     </li>
                     <li>
-                        <a class="<?php echo ($_SERVER['PHP_SELF'] == 'why.php' ? ' active' : '');?>" href="why.php">Why</a>
+                        <a class="<?php echo ($_SERVER['PHP_SELF'] == '/why.php' ? ' active' : '');?>" href="why.php">Why</a>
                     </li>
                     <li>
-                        <a class="<?php echo ($_SERVER['PHP_SELF'] == 'intrapreneur-accelerator.php' ? ' active' : '');?>" href="intrapreneur-accelerator.php">Intrapreneur Accelerator</a>
+                        <a class="<?php echo ($_SERVER['PHP_SELF'] == '/intrapreneur-accelerator.php' ? ' active' : '');?>" href="intrapreneur-accelerator.php">Intrapreneur Accelerator</a>
                     </li>
                     <li>
-                        <a class="<?php echo ($_SERVER['PHP_SELF'] == 'selection.php' ? ' active' : '');?>" href="selection.php">Selection</a>
+                        <a class="<?php echo ($_SERVER['PHP_SELF'] == '/selection.php' ? ' active' : '');?>" href="selection.php">Selection</a>
                     </li>
                     <li>
-                        <a class="<?php echo ($_SERVER['PHP_SELF'] == 'mentors.php' ? ' active' : '');?>" href="mentors.php">Mentors</a>
+                        <a class="<?php echo ($_SERVER['PHP_SELF'] == '/mentors.php' ? ' active' : '');?>" href="mentors.php">Mentors</a>
                     </li>
                     <li>
-                        <a class="<?php echo ($_SERVER['PHP_SELF'] == 'investors.php' ? ' active' : '');?>" href="investors.php">Investors</a>
+                        <a class="<?php echo ($_SERVER['PHP_SELF'] == '/investors.php' ? ' active' : '');?>" href="investors.php">Investors</a>
                     </li>
                     <li>
-                        <a class="<?php echo ($_SERVER['PHP_SELF'] == 'resources.php' ? ' active' : '');?>" href="resources.php">Resources</a>
+                        <a class="<?php echo ($_SERVER['PHP_SELF'] == '/resources.php' ? ' active' : '');?>" href="resources.php">Resources</a>
                     </li>
                 </ul>
             </div>
