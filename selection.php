@@ -24,7 +24,10 @@
     <section id="about-section" class="about-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-5">
+                    <img src="asset/images/stock-photo-people-seminar-business-growth-success-startup-concept-251481646.jpg" class="img-responsive">
+                </div>            
+                <div class="col-md-7">
                     <p>Using an innovative and unique <a class="anchor" href="#virtual_game">"Virtual Investment Game"</a> platform, all employees (or those defined by our Enterprise clients) can invest virtual money, through various rounds, earning virtual return, as well as set up their own projects, invite other employees to participate and interact, in a <a class="anchor" href="#team_selection">"crowdfunding"</a> type of look and feel and UI.</p>
                 </div>
             </div>

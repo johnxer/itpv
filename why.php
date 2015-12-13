@@ -24,7 +24,10 @@
     <section id="about-section" class="about-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-5">
+                <img src="asset/images/stock-photo-asian-business-startup-team-in-meeting-discussing-plan-figures-and-ideas-252909916.jpg" class="img-responsive">
+                </div>
+                <div class="col-md-7">
                     <p>Large enterprises in every vertical are facing unprecedented <a class="anchor" href="#fintech">challenges</a> from digital disruption, emerging technologies and transformative business models.</p>
                     <p>Whether it is the retail industry vs e-commerce, the transportation or hotel industry vs the sharing economy, the utility industry vs the rapidly decreasing cost of solar and storage technologies, or the finance industry vs thousands of startups attacking every segment of finance from lending and payments through asset management, no Enterprise can safely consider its traditional competitors as its main threat.</p>
                     <p>At ITP Ventures we apply these lessons to help Enterprises empower employees so that they can become Intrapreneurs. In other words, we help Enterprises leverage their strengths in human capital and domain expertise to deal effectively with the innovations changing their competitive landscape.</p>

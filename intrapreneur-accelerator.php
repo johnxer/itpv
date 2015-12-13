@@ -24,7 +24,10 @@
     <section id="about-section" class="about-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-5">
+                    <img src="asset/images/stock-photo-back-view-of-businessman-drawing-sketch-on-wall-150441290.jpg" class="img-responsive">
+                </div>
+                <div class="col-md-7">
                     <h3>The key to a successful Corporate Intrapreneur program is:</h3>
                     <ul>
                         <li><i class="fa fa-circle-thin"></i>

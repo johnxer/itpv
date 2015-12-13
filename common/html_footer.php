@@ -20,11 +20,6 @@
 		</div>
 	</div>
 </div>
-
-
-
-
-
 <!-- Modal  enterpriseForm -->
 <div class="modal fade" id="enterpriseForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	<div class="modal-dialog" role="document">
@@ -68,14 +63,14 @@
 									<input type="phone" class="form-control form_enterprise_validation" name="enterprise_phone" id="enterprise_phone" placeholder="Please enter your phone">
 								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<label for="enterprise_question" class="control-label">What you are looking for in a Corporate Intrapreneur Accelerator?</label>
-							<div class="">
-								<textarea placeholder="" class="form-control form_enterprise_validation" name="enterprise_question" id="enterprise_question"></textarea>
+							
+							<div class="form-group">
+								<label style="text-align: left;" for="enterprise_question" class="col-sm-offset-3 col-sm-9 control-label">What you are looking for in a Corporate Intrapreneur Accelerator?</label>
+								<div class=" col-sm-offset-3 col-sm-9">
+									<textarea placeholder="" class="form-control form_enterprise_validation" name="enterprise_question" id="enterprise_question"></textarea>
+								</div>
 							</div>
 						</div>
-						
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default col-sm-3" data-dismiss="modal">Close</button>
@@ -95,10 +90,6 @@
 		</div>
 	</div>
 </div>
-
-
-
-
 <!-- Modal  EntrepreneurForm -->
 <div class="modal fade" id="entrepreneurForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	<div class="modal-dialog" role="document">
@@ -142,40 +133,40 @@
 									<input type="phone" class="form-control form_entrepreneur_validation" name="entrepreneur_phone" id="entrepreneur_phone" placeholder="Please enter your phone">
 								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<label for="entrepreneur_list" class="control-label">List of startups you have led or co-led</label>
-							<div class="">
-								<textarea placeholder="" class="form-control form_entrepreneur_validation" name="entrepreneur_list" id="entrepreneur_list"></textarea>
-							</div>
-						</div>
-						<div class="form-horizontal">
+							
 							<div class="form-group">
-								<div class="col-sm-offset-2 col-sm-10">
+								<label for="entrepreneur_list" style="text-align: left" class=" col-sm-offset-3 col-sm-9 control-label">List of startups you have led or co-led</label>
+								<div class=" col-sm-offset-3 col-sm-9">
+									<textarea placeholder="" class="form-control form_entrepreneur_validation" name="entrepreneur_list" id="entrepreneur_list"></textarea>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<div class="col-sm-offset-3 col-sm-9">
 									<div class="checkbox">
 										<label>
-											<input id="entrepreneur_mentor" name="entrepreneur_mentor" value="1" type="checkbox"> Are you interested in participating as a Mentor of ITP Ventures?
+											<input id="entrepreneur_mentor" class="" name="entrepreneur_mentor" value="1" type="checkbox"> Are you interested in participating as a Mentor of ITP Ventures?
 										</label>
 									</div>
 								</div>
 							</div>
 							<div class="form-group">
-								<div class="col-sm-offset-2 col-sm-10">
+								<div class="col-sm-offset-3 col-sm-9">
 									<div class="checkbox">
 										<label>
-											<input id="entrepreneur_demo" name="entrepreneur_demo" value="1" type="checkbox"> Are you interested in attending an ITP Ventures Demo Day?
+											<input id="entrepreneur_demo" class="" name="entrepreneur_demo" value="1" type="checkbox"> Are you interested in attending an ITP Ventures Demo Day?
 										</label>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<label for="entrepreneur_comments" class="control-label">Comments</label>
-							<div class="">
-								<textarea placeholder="" class="form-control form_entrepreneur_validation" name="entrepreneur_comments" id="entrepreneur_comments"></textarea>
+							
+							<div class="form-group">
+								<label for="entrepreneur_comments" style="text-align: left" class="col-sm-offset-3 col-sm-9 control-label">Comments</label>
+								<div class="col-sm-offset-3 col-sm-9">
+									<textarea placeholder="" class="form-control form_entrepreneur_validation" name="entrepreneur_comments" id="entrepreneur_comments"></textarea>
+								</div>
 							</div>
 						</div>
-						
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default col-sm-3" data-dismiss="modal">Close</button>
@@ -195,11 +186,6 @@
 		</div>
 	</div>
 </div>
-
-
-
-
-
 <!-- Modal  angelForm -->
 <div class="modal fade" id="angelForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	<div class="modal-dialog" role="document">
@@ -243,16 +229,15 @@
 									<input type="phone" class="form-control form_angel_validation" name="angel_phone" id="angel_phone" placeholder="Please enter your phone">
 								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<label for="angel_list" class="control-label">List of startups you have invested in at an early stage</label>
-							<div class="">
-								<textarea placeholder="" class="form-control form_angel_validation" name="angel_list" id="angel_list"></textarea>
-							</div>
-						</div>
-						<div class="form-horizontal">
+							
 							<div class="form-group">
-								<div class="col-sm-offset-2 col-sm-10">
+								<label style="text-align: left" for="angel_list" class="control-label col-sm-offset-3 col-sm-9">List of startups you have invested in at an early stage</label>
+								<div class="col-sm-offset-3 col-sm-9">
+									<textarea placeholder="" class="form-control form_angel_validation" name="angel_list" id="angel_list"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-offset-3 col-sm-9">
 									<div class="checkbox">
 										<label>
 											<input id="entrepreneur_mentor" name="entrepreneur_mentor" value="1" type="checkbox"> Are you interested in participating as a Mentor of ITP Ventures?
@@ -261,7 +246,7 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<div class="col-sm-offset-2 col-sm-10">
+								<div class="col-sm-offset-3 col-sm-9">
 									<div class="checkbox">
 										<label>
 											<input id="entrepreneur_demo" name="entrepreneur_demo" value="1" type="checkbox"> Are you interested in attending an ITP Ventures Demo Day?
@@ -269,14 +254,13 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<label for="entrepreneur_comments" class="control-label">Comments</label>
-							<div class="">
-								<textarea placeholder="" class="form-control" name="entrepreneur_comments" id="entrepreneur_comments"></textarea>
+							<div class="form-group">
+								<label style="text-align: left" for="entrepreneur_comments" class="control-label col-sm-offset-3 col-sm-9">Comments</label>
+								<div class="col-sm-offset-3 col-sm-9">
+									<textarea placeholder="" class="form-control" name="entrepreneur_comments" id="entrepreneur_comments"></textarea>
+								</div>
 							</div>
 						</div>
-						
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default col-sm-3" data-dismiss="modal">Close</button>
@@ -296,11 +280,6 @@
 		</div>
 	</div>
 </div>
-
-
-
-
-
 <!-- Modal  vcForm -->
 <div class="modal fade" id="vcForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	<div class="modal-dialog" role="document">
@@ -345,8 +324,8 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="vc_ifocus" class="col-sm-3 control-label">Investment focus of your latest fund</label>
-								<div class="col-sm-9">
+								<label style="text-align: left" for="vc_ifocus" class="control-label col-sm-offset-3 col-sm-9">Investment focus of your latest fund</label>
+								<div class="col-sm-offset-3 col-sm-9">
 									<select class="form-control form_vc_validation" id="vc_ifocus" name="vc_ifocus">
 										<option disabled selected>
 											Select option
@@ -370,16 +349,16 @@
 									
 								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<label for="vc_list" class="control-label">List of startups you have invested in at an early stage</label>
-							<div class="">
-								<textarea placeholder="" class="form-control"  name="vc_list" id="vc_list"></textarea>
-							</div>
-						</div>
-						<div class="form-horizontal">
+							
 							<div class="form-group">
-								<div class="col-sm-offset-2 col-sm-10">
+								<label style="text-align: left" for="vc_list" class="control-label col-sm-offset-3 col-sm-9">List of startups you have invested in at an early stage</label>
+								<div class="col-sm-offset-3 col-sm-9">
+									<textarea placeholder="" class="form-control"  name="vc_list" id="vc_list"></textarea>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<div class="col-sm-offset-3 col-sm-9">
 									<div class="checkbox">
 										<label>
 											<input id="vc_mentor" name="vc_mentor" value="1" type="checkbox"> Are you interested in participating as a Mentor of ITP Ventures?
@@ -388,7 +367,7 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<div class="col-sm-offset-2 col-sm-10">
+								<div class="col-sm-offset-3 col-sm-9">
 									<div class="checkbox">
 										<label>
 											<input id="vc_demo" name="vc_demo" value="1" type="checkbox"> Are you interested in attending an ITP Ventures Demo Day?
@@ -396,14 +375,14 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<label for="vc_comments" class="control-label">Comments</label>
-							<div class="">
-								<textarea placeholder="" class="form-control" name="vc_comments" id="vc_comments"></textarea>
+							
+							<div class="form-group">
+								<label style="text-align: left" for="vc_comments" class="col-sm-offset-3 col-sm-9 control-label">Comments</label>
+								<div class="col-sm-offset-3 col-sm-9">
+									<textarea placeholder="" class="form-control" name="vc_comments" id="vc_comments"></textarea>
+								</div>
 							</div>
 						</div>
-						
 					</div>
 					
 					<div class="modal-footer">
@@ -424,11 +403,6 @@
 		</div>
 	</div>
 </div>
-
-
-
-
-
 <!-- Modal  contact -->
 <div class="modal fade" id="contactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	<div class="modal-dialog" role="document">
@@ -487,11 +461,6 @@
 		</div>
 	</div>
 </div>
-
-
-
-
-
 <!-- Modal  Hiring -->
 <div class="modal fade" id="hiringForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	<div class="modal-dialog" role="document">
@@ -554,8 +523,6 @@
 		</div>
 	</div>
 </div>
-
-
 
 
 
