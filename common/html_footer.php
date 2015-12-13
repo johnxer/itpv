@@ -877,12 +877,34 @@ $(document).ready(function(){
         }
     })
 
-    if (all_good ) {
+    if (all_good && readURL(document.getElementById('hiring_cv')) ) {
+
+
       $('.form_hiring_submit').removeClass('disabled');
       //$('.important_lm').hide();
     }
   }
 
+function readURL(input) 
+{
+	if (input.files && input.files[0]) 
+    {
+        // var reader = new FileReader();
+         
+
+        // reader.readAsDataURL(input.files[0]);  
+          if (input.files[0].name.split('.')[input.files[0].name.split('.').length - 1]!='pdf' && input.files[0].name.split('.')[input.files[0].name.split('.').length - 1]!='doc' && input.files[0].name.split('.')[input.files[0].name.split('.').length - 1]!='docx')
+          {
+              return false;
+          }
+
+          return true;
+    }
+       
+} 
+         
+
+ 
   
  function validate_resourcesForm()
   {
