@@ -199,44 +199,46 @@
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				<h4 class="modal-title" id="myModalLabel">Apply as Angel</h4>
 			</div>
+			<div class="form_angel_step_1">
+			<form id="form_angel" action="form_angel.php" method="post">			
 			<div class="modal-body">
-				<form >
+				
 					<div class="form-horizontal">
 						<div class="form-group">
 							<label for="angel_name" class="col-sm-3 control-label">Name</label>
 							<div class="col-sm-9">
-								<input type="text" class="form-control" id="angel_name" placeholder="Please enter your name">
+								<input type="text" class="form-control form_angel_validation" name="angel_name" id="angel_name" placeholder="Please enter your name">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="angel_title" class="col-sm-3 control-label">Title</label>
 							<div class="col-sm-9">
-								<input type="text" class="form-control" id="angel_title" placeholder="Please enter your title">
+								<input type="text" class="form-control form_angel_validation" name="angel_title" id="angel_title" placeholder="Please enter your title">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="angel_cname" class="col-sm-3 control-label">Company Name</label>
 							<div class="col-sm-9">
-								<input type="text" class="form-control" id="angel_cname" placeholder="Please enter your company name">
+								<input type="text" class="form-control form_angel_validation" name="angel_cname" id="angel_cname" placeholder="Please enter your company name">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="angel_email" class="col-sm-3 control-label">Email</label>
 							<div class="col-sm-9">
-								<input type="email" class="form-control" id="angel_email" placeholder="Please enter your email">
+								<input type="email" class="form-control form_angel_validation" name="angel_email" id="angel_email" placeholder="Please enter your email">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="angel_phone" class="col-sm-3 control-label">Tel</label>
 							<div class="col-sm-9">
-								<input type="phone" class="form-control" id="angel_phone" placeholder="Please enter your phone">
+								<input type="phone" class="form-control form_angel_validation" name="angel_phone" id="angel_phone" placeholder="Please enter your phone">
 							</div>
 						</div>
 					</div>
 					<div class="form-group">
 						<label for="angel_list" class="control-label">List of startups you have invested in at an early stage</label>
 						<div class="">
-							<textarea placeholder="" class="form-control"  id="angel_list"></textarea>
+							<textarea placeholder="" class="form-control form_angel_validation" name="angel_list" id="angel_list"></textarea>
 						</div>
 					</div>
 					<div class="form-horizontal">
@@ -262,15 +264,28 @@
 					<div class="form-group">
 						<label for="entrepreneur_comments" class="control-label">Comments</label>
 						<div class="">
-							<textarea placeholder="" class="form-control"  id="entrepreneur_comments"></textarea>
+							<textarea placeholder="" class="form-control form_angel_validation" name="entrepreneur_comments" id="entrepreneur_comments"></textarea>
 						</div>
 					</div>
-				</form>
+				
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default col-sm-3" data-dismiss="modal">Close</button>
-				<button type="button" class="btn col-sm-6 col-sm-offset-3 pull-right btn-primary">Submit Form</button>
+				<button type="submit" class="form_angel_submit disabled btn col-sm-6 col-sm-offset-3 pull-right btn-primary">Submit Form</button>
 			</div>
+			</form>
+			</div>
+			<div class="form_angel_step_2" style="display: none;">
+				<div class="modal-body">
+						sadasdsad
+				</div>
+
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default col-sm-12" data-dismiss="modal">Close</button>
+				
+			</div>
+			</div>
+
 		</div>
 	</div>
 </div>
@@ -546,6 +561,31 @@ $(document).ready(function(){
   }
 
 
+
+ function validate_angelForm()
+  {
+    //console.log('xxx');
+    $('.form_angel_submit').addClass('disabled');
+    //$('.important_lm').show();
+    var all_good=true;
+    
+    $.each($('.form_angel_validation'), function()
+    {
+        if ($(this).val()=='')
+        {
+          all_good=false;
+          return false;
+        }
+    })
+
+    if (all_good ) {
+      $('.form_angel_submit').removeClass('disabled');
+      //$('.important_lm').hide();
+    }
+  }
+
+
+
   
 $(document).ready(function(){
  
@@ -654,6 +694,54 @@ $(function() {
     $('#form_entrepreneur').submit();
 
   });
+
+// END ENTERPRENEUR FORM
+
+
+
+// ANGGEL FORM
+
+      $('#form_angel').on('submit', function (e) {
+            e.preventDefault();
+
+            var oldLabel = $('#form_angel button[type="submit"]').html();
+            $('#form_angel .form_angel_submit').prop('disabled', true).text('Sending...');
+
+            $.ajax({
+             type:'POST',
+             url: 'form_angel.php',
+             data: $('#form_angel').serialize()})
+                .done(function() {
+                      $('#form_angel').get(0).reset();
+                      $('.form_angel_step_1').hide();
+                      $('.form_angel_step_2').show();
+                });
+
+      });
+
+      $('#form_angel').on('hidden.bs.modal', function (e) {
+            $('.form_angel_step_2').hide();
+            $('.form_angel_step_1').show();
+      });
+
+
+
+  $('.form_angel_validation').on('change keyup', function()
+  {
+    //console.log('dsdassda');
+    validate_angelForm();
+  });
+
+ 
+
+  $('.form_angel_submit').on('click', function()
+  {
+    if ($(this).hasClass('disabled')) return;
+    $('#form_angel').submit();
+
+  });
+
+// END ANGGEL FORM
 
 
 });
