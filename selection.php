@@ -28,7 +28,7 @@
                     <img src="asset/images/stock-photo-people-seminar-business-growth-success-startup-concept-251481646.jpg" class="img-responsive">
                 </div>            
                 <div class="col-md-7">
-                    <p>Using an innovative and unique <a class="anchor" href="#virtual_game">"Virtual Investment Game"</a> platform, all employees (or those defined by our Enterprise clients) can invest virtual money, through various rounds, earning virtual return, as well as set up their own projects, invite other employees to participate and interact, in a <a class="anchor" href="#team_selection">"crowdfunding"</a> type of look and feel and UI.</p>
+                    <p>Using an innovative and unique <a class="anchor" href="#virtual_game">"Virtual Investment Game"</a> platform, all employees (or those defined by our Enterprise clients) can invest virtual money, through various rounds, earning virtual returns, as well as set up their own projects and invite other employees to participate and interact in a <a class="anchor" href="#team_selection">"crowdfunding"</a> type of look and feel and UI platform.</p>
                 </div>
             </div>
         </div>

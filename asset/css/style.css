@@ -387,9 +387,9 @@ a.navbar-brand strong{
     font-size: 10px;
     position: absolute;
     bottom: -10px;
-    font-weight: 300;
-    letter-spacing: 1.6px;
-    color: #999;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    color: #666;
 }
 
 .navbar-default .navbar-nav {
@@ -629,8 +629,8 @@ a.navbar-brand strong{
 
 
 .about-section{
-        padding-top: 80px;
-    padding-bottom: 80px;
+        padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .about-section h3{
@@ -672,12 +672,13 @@ a.navbar-brand strong{
     }
 
 .about-section h4{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    color: #18C8AE;
 }
 
 #about-section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     //background: url(../images/parallax/bg-01.jpg) no-repeat;
     background-size: cover;
     background-position: center;
@@ -685,8 +686,8 @@ a.navbar-brand strong{
 
 #about-section-2 {
     background: #f9f9f9;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 
