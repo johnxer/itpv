@@ -18,11 +18,11 @@ require_once('swiftmailer/swift_required.php');
   ->setFrom(array('info@itpventures.com' => 'Thank you for applying to ITP Ventures'))
 
   // Set the To addresses with an associative array
-  ->setTo(array($_POST['entrepreneur_email']));
+  ->setTo(array($_POST['demo_email']));
 
   // Give it a body
 	
-	$message->setBody(file_get_contents('to_subscriber_entrepreneur.php'), 'text/html');
+	$message->setBody(file_get_contents('to_subscriber_demo.php'), 'text/html');
 
 	$result = $mailer->send($message);
 
@@ -35,16 +35,16 @@ require_once('swiftmailer/swift_required.php');
 	$mailer = Swift_Mailer::newInstance($transport);
 	$message = Swift_Message::newInstance()
 	 // Give the message a subject
-  ->setSubject('ITPV Entrepreneur Form Submit')
+  ->setSubject('ITPV demo Form Submit')
   // Set the From address with an associative array
-  ->setFrom(array('info@itpventures.com' => 'ITPV Entrepreneur Form Submit'))
+  ->setFrom(array('info@itpventures.com' => 'ITPV demo Form Submit'))
   // Set the To addresses with an associative array
   ->setTo($send_to_admin);
   // Give it a body
-	$the_body=file_get_contents('to_admin_entrepreneur.php');
+	$the_body=file_get_contents('to_admin_demo.php');
 
-	$key_array=['{name}','{title}','{company}','{email}','{phone}','{entrepreneur_startups}','{entrepreneur_mentor}','{entrepreneur_demo}','{entrepreneur_comments}'];
-	$value_array=[$_POST['entrepreneur_name'],$_POST['entrepreneur_title'],$_POST['entrepreneur_cname'],$_POST['entrepreneur_email'],$_POST['entrepreneur_phone'],$_POST['entrepreneur_list'],$_POST['entrepreneur_mentor'],$_POST['entrepreneur_demo'],$_POST['entrepreneur_comments']];
+	$key_array=['{name}','{title}','{company}','{email}','{phone}','{demo_list}','{demo_demo}','{demo_comments}'];
+	$value_array=[$_POST['demo_name'],$_POST['demo_title'],$_POST['demo_cname'],$_POST['demo_email'],$_POST['demo_phone'],$_POST['demo_list'],$_POST['demo_demo'],$_POST['demo_comments']];
 	$the_body=str_replace($key_array, $value_array, $the_body);
 
 

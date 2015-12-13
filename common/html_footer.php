@@ -524,7 +524,201 @@
 	</div>
 </div>
 
+<!-- Modal  MentorForm -->
+<div class="modal fade" id="mentorForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Apply to become a Mentor</h4>
+			</div>
+			<div class="form_mentor_step_1">
+				<form id="form_mentor" action="form_mentor.php" method="post">
+					<div class="modal-body">
+						
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label for="mentor_name" class="col-sm-3 control-label">Name</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form_mentor_validation" name="mentor_name" id="mentor_name" placeholder="Please enter your name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="mentor_title" class="col-sm-3 control-label">Title</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form_mentor_validation" name="mentor_title" id="mentor_title" placeholder="Please enter your title">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="mentor_cname" class="col-sm-3 control-label">Company Name</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form_mentor_validation" name="mentor_cname" id="mentor_cname" placeholder="Please enter your company name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="mentor_email" class="col-sm-3 control-label">Email</label>
+								<div class="col-sm-9">
+									<input type="email" class="form-control form_mentor_validation" name="mentor_email" id="mentor_email" placeholder="Please enter your email">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="mentor_phone" class="col-sm-3 control-label">Tel</label>
+								<div class="col-sm-9">
+									<input type="phone" class="form-control form_mentor_validation" name="mentor_phone" id="mentor_phone" placeholder="Please enter your phone">
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label for="mentor_list" style="text-align: left" class=" col-sm-offset-3 col-sm-9 control-label">List of early stage startups you have founded, co-founded or invested in</label>
+								<div class=" col-sm-offset-3 col-sm-9">
+									<textarea placeholder="" class="form-control form_mentor_validation" name="mentor_list" id="mentor_list"></textarea>
+								</div>
+							</div>
+<!--							
+							<div class="form-group">
+								<div class="col-sm-offset-3 col-sm-9">
+									<div class="checkbox">
+										<label>
+											<input id="mentor_mentor" class="" name="mentor_mentor" value="1" type="checkbox"> Are you interested in participating as a Mentor of ITP Ventures?
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-offset-3 col-sm-9">
+									<div class="checkbox">
+										<label>
+											<input id="mentor_demo" class="" name="mentor_demo" value="1" type="checkbox"> Are you interested in attending an ITP Ventures Demo Day?
+										</label>
+									</div>
+								</div>
+							</div>
+-->
+							<div class="form-group">
+								<label for="mentor_comments" style="text-align: left" class="col-sm-offset-3 col-sm-9 control-label">Comments</label>
+								<div class="col-sm-offset-3 col-sm-9">
+									<textarea placeholder="" class="form-control form_mentor_validation" name="mentor_comments" id="mentor_comments"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default col-sm-3" data-dismiss="modal">Close</button>
+						<button type="submit" class="btn form_mentor_submit disabled col-sm-6 col-sm-offset-3 pull-right btn-primary">Submit Form</button>
+					</div>
+				</form>
+			</div>
+			<div class="form_mentor_step_2" style="display: none;">
+				<div class="modal-body">
+					Message sent!
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default col-sm-12" data-dismiss="modal">Close</button>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
+
+<!-- Modal  MentorForm -->
+<div class="modal fade" id="demoForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Apply to Attend a Demo Day</h4>
+			</div>
+			<div class="form_demo_step_1">
+				<form id="form_demo" action="form_demo.php" method="post">
+					<div class="modal-body">
+						
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label for="demo_name" class="col-sm-3 control-label">Name</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form_demo_validation" name="demo_name" id="demo_name" placeholder="Please enter your name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="demo_title" class="col-sm-3 control-label">Title</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form_demo_validation" name="demo_title" id="demo_title" placeholder="Please enter your title">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="demo_cname" class="col-sm-3 control-label">Company Name</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form_demo_validation" name="demo_cname" id="demo_cname" placeholder="Please enter your company name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="demo_email" class="col-sm-3 control-label">Email</label>
+								<div class="col-sm-9">
+									<input type="email" class="form-control form_demo_validation" name="demo_email" id="demo_email" placeholder="Please enter your email">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="demo_phone" class="col-sm-3 control-label">Tel</label>
+								<div class="col-sm-9">
+									<input type="phone" class="form-control form_demo_validation" name="demo_phone" id="demo_phone" placeholder="Please enter your phone">
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label for="demo_list" style="text-align: left" class=" col-sm-offset-3 col-sm-9 control-label">List of locations you might be interested in attending a Demo Day in</label>
+								<div class=" col-sm-offset-3 col-sm-9">
+									<textarea placeholder="" class="form-control form_demo_validation" name="demo_list" id="demo_list"></textarea>
+								</div>
+							</div>
+<!--							
+							<div class="form-group">
+								<div class="col-sm-offset-3 col-sm-9">
+									<div class="checkbox">
+										<label>
+											<input id="demo_demo" class="" name="demo_mentor" value="1" type="checkbox"> Are you interested in participating as a Mentor of ITP Ventures?
+										</label>
+									</div>
+								</div>
+							</div>
+-->							
+							<div class="form-group">
+								<div class="col-sm-offset-3 col-sm-9">
+									<div class="checkbox">
+										<label>
+											<input id="demo_demo" class="" name="demo_demo" value="1" type="checkbox"> Would you be interested in attending a "Virtual Demo Day" via remote hookup? Yes No
+										</label>
+									</div>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label for="demo_comments" style="text-align: left" class="col-sm-offset-3 col-sm-9 control-label">Comments</label>
+								<div class="col-sm-offset-3 col-sm-9">
+									<textarea placeholder="" class="form-control form_demo_validation" name="demo_comments" id="demo_comments"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default col-sm-3" data-dismiss="modal">Close</button>
+						<button type="submit" class="btn form_demo_submit disabled col-sm-6 col-sm-offset-3 pull-right btn-primary">Submit Form</button>
+					</div>
+				</form>
+			</div>
+			<div class="form_demo_step_2" style="display: none;">
+				<div class="modal-body">
+					Message sent!
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default col-sm-12" data-dismiss="modal">Close</button>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 
 
@@ -708,6 +902,50 @@ $(document).ready(function(){
 
     if (all_good ) {
       $('.form_resources_submit').removeClass('disabled');
+      //$('.important_lm').hide();
+    }
+  }
+
+ function validate_mentorForm()
+  {
+    //console.log('xxx');
+    $('.form_mentor_submit').addClass('disabled');
+    //$('.important_lm').show();
+    var all_good=true;
+    
+    $.each($('.form_mentor_validation'), function()
+    {
+        if ($(this).val()=='')
+        {
+          all_good=false;
+          return false;
+        }
+    })
+
+    if (all_good ) {
+      $('.form_mentor_submit').removeClass('disabled');
+      //$('.important_lm').hide();
+    }
+  }
+
+function validate_demoForm()
+  {
+    //console.log('xxx');
+    $('.form_demo_submit').addClass('disabled');
+    //$('.important_lm').show();
+    var all_good=true;
+    
+    $.each($('.form_demo_validation'), function()
+    {
+        if ($(this).val()=='')
+        {
+          all_good=false;
+          return false;
+        }
+    })
+
+    if (all_good ) {
+      $('.form_demo_submit').removeClass('disabled');
       //$('.important_lm').hide();
     }
   }
@@ -1050,6 +1288,98 @@ $(function() {
   });
 
 // END RESOURCES FORM
+
+
+
+// MENTOR FORM
+
+      $('#form_mentor').on('submit', function (e) {
+            e.preventDefault();
+
+            var oldLabel = $('#form_mentor button[type="submit"]').html();
+            $('#form_mentor .form_mentor_submit').prop('disabled', true).text('Sending...');
+
+            $.ajax({
+             type:'POST',
+             url: 'form_mentor.php',
+             data: $('#form_mentor').serialize()})
+                .done(function() {
+                      $('#form_mentor').get(0).reset();
+                      $('.form_mentor_step_1').hide();
+                      $('.form_mentor_step_2').show();
+                });
+
+      });
+
+      $('#form_mentor').on('hidden.bs.modal', function (e) {
+            $('.form_mentor_step_2').hide();
+            $('.form_mentor_step_1').show();
+      });
+
+
+
+  $('.form_mentor_validation').on('change keyup', function()
+  {
+    //console.log('dsdassda');
+    validate_mentorForm();
+  });
+
+ 
+
+  $('.form_mentor_submit').on('click', function()
+  {
+    if ($(this).hasClass('disabled')) return;
+    $('#form_mentor').submit();
+
+  });
+
+// END MENTOR FORM
+
+
+
+// demo FORM
+
+      $('#form_demo').on('submit', function (e) {
+            e.preventDefault();
+
+            var oldLabel = $('#form_demo button[type="submit"]').html();
+            $('#form_demo .form_demo_submit').prop('disabled', true).text('Sending...');
+
+            $.ajax({
+             type:'POST',
+             url: 'form_demo.php',
+             data: $('#form_demo').serialize()})
+                .done(function() {
+                      $('#form_demo').get(0).reset();
+                      $('.form_demo_step_1').hide();
+                      $('.form_demo_step_2').show();
+                });
+
+      });
+
+      $('#form_demo').on('hidden.bs.modal', function (e) {
+            $('.form_demo_step_2').hide();
+            $('.form_demo_step_1').show();
+      });
+
+
+
+  $('.form_demo_validation').on('change keyup', function()
+  {
+    //console.log('dsdassda');
+    validate_demoForm();
+  });
+
+ 
+
+  $('.form_demo_submit').on('click', function()
+  {
+    if ($(this).hasClass('disabled')) return;
+    $('#form_demo').submit();
+
+  });
+
+// END demo FORM
 
 });
 
