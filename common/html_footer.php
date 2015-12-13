@@ -145,7 +145,7 @@
 								<div class="col-sm-offset-3 col-sm-9">
 									<div class="checkbox">
 										<label>
-											<input id="entrepreneur_mentor" class="" name="entrepreneur_mentor" value="1" type="checkbox"> Are you interested in participating as a Mentor of ITP Ventures?
+											<input id="entrepreneur_mentor" class="" name="entrepreneur_mentor" value="yes" type="checkbox"> Are you interested in participating as a Mentor of ITP Ventures?
 										</label>
 									</div>
 								</div>
@@ -154,7 +154,7 @@
 								<div class="col-sm-offset-3 col-sm-9">
 									<div class="checkbox">
 										<label>
-											<input id="entrepreneur_demo" class="" name="entrepreneur_demo" value="1" type="checkbox"> Are you interested in attending an ITP Ventures Demo Day?
+											<input id="entrepreneur_demo" class="" name="entrepreneur_demo" value="yes" type="checkbox"> Are you interested in attending an ITP Ventures Demo Day?
 										</label>
 									</div>
 								</div>
@@ -163,7 +163,7 @@
 							<div class="form-group">
 								<label for="entrepreneur_comments" style="text-align: left" class="col-sm-offset-3 col-sm-9 control-label">Comments</label>
 								<div class="col-sm-offset-3 col-sm-9">
-									<textarea placeholder="" class="form-control form_entrepreneur_validation" name="entrepreneur_comments" id="entrepreneur_comments"></textarea>
+									<textarea placeholder="" class="form-control" name="entrepreneur_comments" id="entrepreneur_comments"></textarea>
 								</div>
 							</div>
 						</div>
@@ -240,7 +240,7 @@
 								<div class="col-sm-offset-3 col-sm-9">
 									<div class="checkbox">
 										<label>
-											<input id="entrepreneur_mentor" name="entrepreneur_mentor" value="1" type="checkbox"> Are you interested in participating as a Mentor of ITP Ventures?
+											<input id="angel_mentor" name="angel_mentor" value="yes" type="checkbox"> Are you interested in participating as a Mentor of ITP Ventures?
 										</label>
 									</div>
 								</div>
@@ -249,15 +249,15 @@
 								<div class="col-sm-offset-3 col-sm-9">
 									<div class="checkbox">
 										<label>
-											<input id="entrepreneur_demo" name="entrepreneur_demo" value="1" type="checkbox"> Are you interested in attending an ITP Ventures Demo Day?
+											<input id="angel_demo" name="angel_demo" value="yes" type="checkbox"> Are you interested in attending an ITP Ventures Demo Day?
 										</label>
 									</div>
 								</div>
 							</div>
 							<div class="form-group">
-								<label style="text-align: left" for="entrepreneur_comments" class="control-label col-sm-offset-3 col-sm-9">Comments</label>
+								<label style="text-align: left" for="angel_comments" class="control-label col-sm-offset-3 col-sm-9">Comments</label>
 								<div class="col-sm-offset-3 col-sm-9">
-									<textarea placeholder="" class="form-control" name="entrepreneur_comments" id="entrepreneur_comments"></textarea>
+									<textarea placeholder="" class="form-control" name="angel_comments" id="angel_comments"></textarea>
 								</div>
 							</div>
 						</div>
@@ -361,7 +361,7 @@
 								<div class="col-sm-offset-3 col-sm-9">
 									<div class="checkbox">
 										<label>
-											<input id="vc_mentor" name="vc_mentor" value="1" type="checkbox"> Are you interested in participating as a Mentor of ITP Ventures?
+											<input id="vc_mentor" name="vc_mentor" value="yes" type="checkbox"> Are you interested in participating as a Mentor of ITP Ventures?
 										</label>
 									</div>
 								</div>
@@ -370,7 +370,7 @@
 								<div class="col-sm-offset-3 col-sm-9">
 									<div class="checkbox">
 										<label>
-											<input id="vc_demo" name="vc_demo" value="1" type="checkbox"> Are you interested in attending an ITP Ventures Demo Day?
+											<input id="vc_demo" name="vc_demo" value="yes" type="checkbox"> Are you interested in attending an ITP Ventures Demo Day?
 										</label>
 									</div>
 								</div>
@@ -597,7 +597,7 @@
 							<div class="form-group">
 								<label for="mentor_comments" style="text-align: left" class="col-sm-offset-3 col-sm-9 control-label">Comments</label>
 								<div class="col-sm-offset-3 col-sm-9">
-									<textarea placeholder="" class="form-control form_mentor_validation" name="mentor_comments" id="mentor_comments"></textarea>
+									<textarea placeholder="" class="form-control" name="mentor_comments" id="mentor_comments"></textarea>
 								</div>
 							</div>
 						</div>
@@ -687,7 +687,7 @@
 								<div class="col-sm-offset-3 col-sm-9">
 									<div class="checkbox">
 										<label>
-											<input id="demo_demo" class="" name="demo_demo" value="1" type="checkbox"> Would you be interested in attending a "Virtual Demo Day" via remote hookup? Yes No
+											<input id="demo_demo" class="" name="demo_demo" value="yes" type="checkbox"> Would you be interested in attending a "Virtual Demo Day" via remote hookup? Yes No
 										</label>
 									</div>
 								</div>
@@ -696,7 +696,7 @@
 							<div class="form-group">
 								<label for="demo_comments" style="text-align: left" class="col-sm-offset-3 col-sm-9 control-label">Comments</label>
 								<div class="col-sm-offset-3 col-sm-9">
-									<textarea placeholder="" class="form-control form_demo_validation" name="demo_comments" id="demo_comments"></textarea>
+									<textarea placeholder="" class="form-control" name="demo_comments" id="demo_comments"></textarea>
 								</div>
 							</div>
 						</div>
