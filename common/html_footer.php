@@ -20,6 +20,11 @@
 		</div>
 	</div>
 </div>
+
+
+
+
+
 <!-- Modal  enterpriseForm -->
 <div class="modal fade" id="enterpriseForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	<div class="modal-dialog" role="document">
@@ -29,68 +34,71 @@
 				<h4 class="modal-title" id="myModalLabel">Apply as Enterprise</h4>
 			</div>
 			<div class="form_enterprise_step_1">
-			<form id="form_enterprise" action="form_enterprise.php" method="post">
-			<div class="modal-body">
-				
-					<div class="form-horizontal">
-						<div class="form-group">
-							<label for="enterprise_name" class="col-sm-3 control-label">Name</label>
-							<div class="col-sm-9">
-								<input type="text" class="form-control form_enterprise_validation" name="enterprise_name" id="enterprise_name" placeholder="Please enter your name">
+				<form id="form_enterprise" action="form_enterprise.php" method="post">
+					<div class="modal-body">
+						
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label for="enterprise_name" class="col-sm-3 control-label">Name</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form_enterprise_validation" name="enterprise_name" id="enterprise_name" placeholder="Please enter your name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="enterprise_title" class="col-sm-3 control-label">Title</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form_enterprise_validation" name="enterprise_title" id="enterprise_title" placeholder="Please enter your title">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="enterprise_cname" class="col-sm-3 control-label">Company Name</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form_enterprise_validation" name="enterprise_cname" id="enterprise_cname" placeholder="Please enter your company name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="enterprise_email" class="col-sm-3 control-label">Email</label>
+								<div class="col-sm-9">
+									<input type="email" class="form-control form_enterprise_validation" name="enterprise_email" id="enterprise_email" placeholder="Please enter your email">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="enterprise_phone" class="col-sm-3 control-label">Tel</label>
+								<div class="col-sm-9">
+									<input type="phone" class="form-control form_enterprise_validation" name="enterprise_phone" id="enterprise_phone" placeholder="Please enter your phone">
+								</div>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="enterprise_title" class="col-sm-3 control-label">Title</label>
-							<div class="col-sm-9">
-								<input type="text" class="form-control form_enterprise_validation" name="enterprise_title" id="enterprise_title" placeholder="Please enter your title">
+							<label for="enterprise_question" class="control-label">What you are looking for in a Corporate Intrapreneur Accelerator?</label>
+							<div class="">
+								<textarea placeholder="" class="form-control form_enterprise_validation" name="enterprise_question" id="enterprise_question"></textarea>
 							</div>
 						</div>
-						<div class="form-group">
-							<label for="enterprise_cname" class="col-sm-3 control-label">Company Name</label>
-							<div class="col-sm-9">
-								<input type="text" class="form-control form_enterprise_validation" name="enterprise_cname" id="enterprise_cname" placeholder="Please enter your company name">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="enterprise_email" class="col-sm-3 control-label">Email</label>
-							<div class="col-sm-9">
-								<input type="email" class="form-control form_enterprise_validation" name="enterprise_email" id="enterprise_email" placeholder="Please enter your email">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="enterprise_phone" class="col-sm-3 control-label">Tel</label>
-							<div class="col-sm-9">
-								<input type="phone" class="form-control form_enterprise_validation" name="enterprise_phone" id="enterprise_phone" placeholder="Please enter your phone">
-							</div>
-						</div>
+						
 					</div>
-					<div class="form-group">
-						<label for="enterprise_question" class="control-label">What you are looking for in a Corporate Intrapreneur Accelerator?</label>
-						<div class="">
-							<textarea placeholder="" class="form-control form_enterprise_validation" name="enterprise_question" id="enterprise_question"></textarea>
-						</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default col-sm-3" data-dismiss="modal">Close</button>
+						<button type="submit" class="form_enterprise_submit disabled btn col-sm-6 col-sm-offset-3 pull-right btn-primary">Submit Form</button>
 					</div>
-				
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default col-sm-3" data-dismiss="modal">Close</button>
-				<button type="submit" class="form_enterprise_submit disabled btn col-sm-6 col-sm-offset-3 pull-right btn-primary">Submit Form</button>
-			</div>
-			</form>
+				</form>
 			</div>
 			<div class="form_enterprise_step_2" style="display: none;">
 				<div class="modal-body">
-						sadasdsad
+					Message sent!
 				</div>
-
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default col-sm-12" data-dismiss="modal">Close</button>
-				
-			</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default col-sm-12" data-dismiss="modal">Close</button>
+					
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+
+
+
 <!-- Modal  EntrepreneurForm -->
 <div class="modal fade" id="entrepreneurForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	<div class="modal-dialog" role="document">
@@ -100,97 +108,98 @@
 				<h4 class="modal-title" id="myModalLabel">Apply as Entrepreneur</h4>
 			</div>
 			<div class="form_entrepreneur_step_1">
-			<form id="form_entrepreneur" action="form_entrepreneur.php" method="post">
-
-			<div class="modal-body">
-				
-					<div class="form-horizontal">
-						<div class="form-group">
-							<label for="entrepreneur_name" class="col-sm-3 control-label">Name</label>
-							<div class="col-sm-9">
-								<input type="text" class="form-control form_entrepreneur_validation" name="entrepreneur_name" id="entrepreneur_name" placeholder="Please enter your name">
+				<form id="form_entrepreneur" action="form_entrepreneur.php" method="post">
+					<div class="modal-body">
+						
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label for="entrepreneur_name" class="col-sm-3 control-label">Name</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form_entrepreneur_validation" name="entrepreneur_name" id="entrepreneur_name" placeholder="Please enter your name">
+								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<label for="entrepreneur_title" class="col-sm-3 control-label">Title</label>
-							<div class="col-sm-9">
-								<input type="text" class="form-control form_entrepreneur_validation" name="entrepreneur_title" id="entrepreneur_title" placeholder="Please enter your title">
+							<div class="form-group">
+								<label for="entrepreneur_title" class="col-sm-3 control-label">Title</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form_entrepreneur_validation" name="entrepreneur_title" id="entrepreneur_title" placeholder="Please enter your title">
+								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<label for="entrepreneur_cname" class="col-sm-3 control-label">Company Name</label>
-							<div class="col-sm-9">
-								<input type="text" class="form-control form_entrepreneur_validation" name="entrepreneur_cname" id="entrepreneur_cname" placeholder="Please enter your company name">
+							<div class="form-group">
+								<label for="entrepreneur_cname" class="col-sm-3 control-label">Company Name</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form_entrepreneur_validation" name="entrepreneur_cname" id="entrepreneur_cname" placeholder="Please enter your company name">
+								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<label for="entrepreneur_email" class="col-sm-3 control-label">Email</label>
-							<div class="col-sm-9">
-								<input type="email" class="form-control form_entrepreneur_validation" name="entrepreneur_email" id="entrepreneur_email" placeholder="Please enter your email">
+							<div class="form-group">
+								<label for="entrepreneur_email" class="col-sm-3 control-label">Email</label>
+								<div class="col-sm-9">
+									<input type="email" class="form-control form_entrepreneur_validation" name="entrepreneur_email" id="entrepreneur_email" placeholder="Please enter your email">
+								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<label for="entrepreneur_phone" class="col-sm-3 control-label">Tel</label>
-							<div class="col-sm-9">
-								<input type="phone" class="form-control form_entrepreneur_validation" name="entrepreneur_phone" id="entrepreneur_phone" placeholder="Please enter your phone">
-							</div>
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="entrepreneur_list" class="control-label">List of startups you have led or co-led</label>
-						<div class="">
-							<textarea placeholder="" class="form-control form_entrepreneur_validation" name="entrepreneur_list" id="entrepreneur_list"></textarea>
-						</div>
-					</div>
-					<div class="form-horizontal">
-						<div class="form-group">
-							<div class="col-sm-offset-2 col-sm-10">
-								<div class="checkbox">
-									<label>
-										<input id="entrepreneur_mentor" name="entrepreneur_mentor" value="1" type="checkbox"> Are you interested in participating as a Mentor of ITP Ventures?
-									</label>
+							<div class="form-group">
+								<label for="entrepreneur_phone" class="col-sm-3 control-label">Tel</label>
+								<div class="col-sm-9">
+									<input type="phone" class="form-control form_entrepreneur_validation" name="entrepreneur_phone" id="entrepreneur_phone" placeholder="Please enter your phone">
 								</div>
 							</div>
 						</div>
 						<div class="form-group">
-							<div class="col-sm-offset-2 col-sm-10">
-								<div class="checkbox">
-									<label>
-										<input id="entrepreneur_demo" name="entrepreneur_demo" value="1" type="checkbox"> Are you interested in attending an ITP Ventures Demo Day?
-									</label>
+							<label for="entrepreneur_list" class="control-label">List of startups you have led or co-led</label>
+							<div class="">
+								<textarea placeholder="" class="form-control form_entrepreneur_validation" name="entrepreneur_list" id="entrepreneur_list"></textarea>
+							</div>
+						</div>
+						<div class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-offset-2 col-sm-10">
+									<div class="checkbox">
+										<label>
+											<input id="entrepreneur_mentor" name="entrepreneur_mentor" value="1" type="checkbox"> Are you interested in participating as a Mentor of ITP Ventures?
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-offset-2 col-sm-10">
+									<div class="checkbox">
+										<label>
+											<input id="entrepreneur_demo" name="entrepreneur_demo" value="1" type="checkbox"> Are you interested in attending an ITP Ventures Demo Day?
+										</label>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="form-group">
-						<label for="entrepreneur_comments" class="control-label">Comments</label>
-						<div class="">
-							<textarea placeholder="" class="form-control form_entrepreneur_validation" name="entrepreneur_comments" id="entrepreneur_comments"></textarea>
+						<div class="form-group">
+							<label for="entrepreneur_comments" class="control-label">Comments</label>
+							<div class="">
+								<textarea placeholder="" class="form-control form_entrepreneur_validation" name="entrepreneur_comments" id="entrepreneur_comments"></textarea>
+							</div>
 						</div>
+						
 					</div>
-				
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default col-sm-3" data-dismiss="modal">Close</button>
-				<button type="submit" class="btn form_entrepreneur_submit disabled col-sm-6 col-sm-offset-3 pull-right btn-primary">Submit Form</button>
-			</div>
-
-			</form>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default col-sm-3" data-dismiss="modal">Close</button>
+						<button type="submit" class="btn form_entrepreneur_submit disabled col-sm-6 col-sm-offset-3 pull-right btn-primary">Submit Form</button>
+					</div>
+				</form>
 			</div>
 			<div class="form_entrepreneur_step_2" style="display: none;">
 				<div class="modal-body">
-						sadasdsad
+					Message sent!
 				</div>
-
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default col-sm-12" data-dismiss="modal">Close</button>
-				
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default col-sm-12" data-dismiss="modal">Close</button>
+					
+				</div>
 			</div>
-			</div>
-
 		</div>
 	</div>
 </div>
+
+
+
+
+
 <!-- Modal  angelForm -->
 <div class="modal fade" id="angelForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	<div class="modal-dialog" role="document">
@@ -200,95 +209,98 @@
 				<h4 class="modal-title" id="myModalLabel">Apply as Angel</h4>
 			</div>
 			<div class="form_angel_step_1">
-			<form id="form_angel" action="form_angel.php" method="post">			
-			<div class="modal-body">
-				
-					<div class="form-horizontal">
-						<div class="form-group">
-							<label for="angel_name" class="col-sm-3 control-label">Name</label>
-							<div class="col-sm-9">
-								<input type="text" class="form-control form_angel_validation" name="angel_name" id="angel_name" placeholder="Please enter your name">
+				<form id="form_angel" action="form_angel.php" method="post">
+					<div class="modal-body">
+						
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label for="angel_name" class="col-sm-3 control-label">Name</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form_angel_validation" name="angel_name" id="angel_name" placeholder="Please enter your name">
+								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<label for="angel_title" class="col-sm-3 control-label">Title</label>
-							<div class="col-sm-9">
-								<input type="text" class="form-control form_angel_validation" name="angel_title" id="angel_title" placeholder="Please enter your title">
+							<div class="form-group">
+								<label for="angel_title" class="col-sm-3 control-label">Title</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form_angel_validation" name="angel_title" id="angel_title" placeholder="Please enter your title">
+								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<label for="angel_cname" class="col-sm-3 control-label">Company Name</label>
-							<div class="col-sm-9">
-								<input type="text" class="form-control form_angel_validation" name="angel_cname" id="angel_cname" placeholder="Please enter your company name">
+							<div class="form-group">
+								<label for="angel_cname" class="col-sm-3 control-label">Company Name</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form_angel_validation" name="angel_cname" id="angel_cname" placeholder="Please enter your company name">
+								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<label for="angel_email" class="col-sm-3 control-label">Email</label>
-							<div class="col-sm-9">
-								<input type="email" class="form-control form_angel_validation" name="angel_email" id="angel_email" placeholder="Please enter your email">
+							<div class="form-group">
+								<label for="angel_email" class="col-sm-3 control-label">Email</label>
+								<div class="col-sm-9">
+									<input type="email" class="form-control form_angel_validation" name="angel_email" id="angel_email" placeholder="Please enter your email">
+								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<label for="angel_phone" class="col-sm-3 control-label">Tel</label>
-							<div class="col-sm-9">
-								<input type="phone" class="form-control form_angel_validation" name="angel_phone" id="angel_phone" placeholder="Please enter your phone">
-							</div>
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="angel_list" class="control-label">List of startups you have invested in at an early stage</label>
-						<div class="">
-							<textarea placeholder="" class="form-control form_angel_validation" name="angel_list" id="angel_list"></textarea>
-						</div>
-					</div>
-					<div class="form-horizontal">
-						<div class="form-group">
-							<div class="col-sm-offset-2 col-sm-10">
-								<div class="checkbox">
-									<label>
-										<input id="entrepreneur_mentor" name="entrepreneur_mentor" value="1" type="checkbox"> Are you interested in participating as a Mentor of ITP Ventures?
-									</label>
+							<div class="form-group">
+								<label for="angel_phone" class="col-sm-3 control-label">Tel</label>
+								<div class="col-sm-9">
+									<input type="phone" class="form-control form_angel_validation" name="angel_phone" id="angel_phone" placeholder="Please enter your phone">
 								</div>
 							</div>
 						</div>
 						<div class="form-group">
-							<div class="col-sm-offset-2 col-sm-10">
-								<div class="checkbox">
-									<label>
-										<input id="entrepreneur_demo" name="entrepreneur_demo" value="1" type="checkbox"> Are you interested in attending an ITP Ventures Demo Day?
-									</label>
+							<label for="angel_list" class="control-label">List of startups you have invested in at an early stage</label>
+							<div class="">
+								<textarea placeholder="" class="form-control form_angel_validation" name="angel_list" id="angel_list"></textarea>
+							</div>
+						</div>
+						<div class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-offset-2 col-sm-10">
+									<div class="checkbox">
+										<label>
+											<input id="entrepreneur_mentor" name="entrepreneur_mentor" value="1" type="checkbox"> Are you interested in participating as a Mentor of ITP Ventures?
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-offset-2 col-sm-10">
+									<div class="checkbox">
+										<label>
+											<input id="entrepreneur_demo" name="entrepreneur_demo" value="1" type="checkbox"> Are you interested in attending an ITP Ventures Demo Day?
+										</label>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="form-group">
-						<label for="entrepreneur_comments" class="control-label">Comments</label>
-						<div class="">
-							<textarea placeholder="" class="form-control form_angel_validation" name="entrepreneur_comments" id="entrepreneur_comments"></textarea>
+						<div class="form-group">
+							<label for="entrepreneur_comments" class="control-label">Comments</label>
+							<div class="">
+								<textarea placeholder="" class="form-control" name="entrepreneur_comments" id="entrepreneur_comments"></textarea>
+							</div>
 						</div>
+						
 					</div>
-				
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default col-sm-3" data-dismiss="modal">Close</button>
-				<button type="submit" class="form_angel_submit disabled btn col-sm-6 col-sm-offset-3 pull-right btn-primary">Submit Form</button>
-			</div>
-			</form>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default col-sm-3" data-dismiss="modal">Close</button>
+						<button type="submit" class="form_angel_submit disabled btn col-sm-6 col-sm-offset-3 pull-right btn-primary">Submit Form</button>
+					</div>
+				</form>
 			</div>
 			<div class="form_angel_step_2" style="display: none;">
 				<div class="modal-body">
-						sadasdsad
+					Message sent!
 				</div>
-
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default col-sm-12" data-dismiss="modal">Close</button>
-				
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default col-sm-12" data-dismiss="modal">Close</button>
+					
+				</div>
 			</div>
-			</div>
-
 		</div>
 	</div>
 </div>
+
+
+
+
+
 <!-- Modal  vcForm -->
 <div class="modal fade" id="vcForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	<div class="modal-dialog" role="document">
@@ -297,107 +309,126 @@
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				<h4 class="modal-title" id="myModalLabel">Apply as VC</h4>
 			</div>
-			<div class="modal-body">
-				<form >
-					<div class="form-horizontal">
-						<div class="form-group">
-							<label for="vc_name" class="col-sm-3 control-label">Name</label>
-							<div class="col-sm-9">
-								<input type="text" class="form-control" id="vc_name" placeholder="Please enter your name">
+			<div class="form_vc_step_1">
+				<form id="form_vc" action="form_vc.php" method="post">
+					<div class="modal-body">
+						
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label for="vc_name" class="col-sm-3 control-label">Name</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form_vc_validation" name="vc_name" id="vc_name" placeholder="Please enter your name">
+								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<label for="vc_title" class="col-sm-3 control-label">Title</label>
-							<div class="col-sm-9">
-								<input type="text" class="form-control" id="vc_title" placeholder="Please enter your title">
+							<div class="form-group">
+								<label for="vc_title" class="col-sm-3 control-label">Title</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form_vc_validation" name="vc_title" id="vc_title" placeholder="Please enter your title">
+								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<label for="vc_cname" class="col-sm-3 control-label">Company Name</label>
-							<div class="col-sm-9">
-								<input type="text" class="form-control" id="vc_cname" placeholder="Please enter your company name">
+							<div class="form-group">
+								<label for="vc_cname" class="col-sm-3 control-label">Company Name</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form_vc_validation" name="vc_cname" id="vc_cname" placeholder="Please enter your company name">
+								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<label for="vc_email" class="col-sm-3 control-label">Email</label>
-							<div class="col-sm-9">
-								<input type="email" class="form-control" id="vc_email" placeholder="Please enter your email">
+							<div class="form-group">
+								<label for="vc_email" class="col-sm-3 control-label">Email</label>
+								<div class="col-sm-9">
+									<input type="email" class="form-control form_vc_validation" name="vc_email" id="vc_email" placeholder="Please enter your email">
+								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<label for="vc_phone" class="col-sm-3 control-label">Tel</label>
-							<div class="col-sm-9">
-								<input type="phone" class="form-control" id="vc_phone" placeholder="Please enter your phone">
+							<div class="form-group">
+								<label for="vc_phone" class="col-sm-3 control-label">Tel</label>
+								<div class="col-sm-9">
+									<input type="phone" class="form-control form_vc_validation" name="vc_phone" id="vc_phone" placeholder="Please enter your phone">
+								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<label for="vc_ifocus" class="col-sm-3 control-label">Investment focus of your latest fund</label>
-							<div class="col-sm-9">
-								<select class="" id="vc_ifocus">
-									<option disabled selected>
-										Select option
-									</option>
-									<option value="seed">
-										Seed
-									</option>
-									<option value="early_stae">
-										Early Stage
-									</option>
-									<option value="growth">
-										Growth
-									</option>
-									<option value="late_stage">
-										Late Stage
-									</option>
-									<option value="all_stages">
-										All Stages
-									</option>
-								</select>
-								
-							</div>
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="vc_list" class="control-label">List of startups you have invested in at an early stage</label>
-						<div class="">
-							<textarea placeholder="" class="form-control"  id="vc_list"></textarea>
-						</div>
-					</div>
-					<div class="form-horizontal">
-						<div class="form-group">
-							<div class="col-sm-offset-2 col-sm-10">
-								<div class="checkbox">
-									<label>
-										<input id="vc_mentor" name="vc_mentor" value="1" type="checkbox"> Are you interested in participating as a Mentor of ITP Ventures?
-									</label>
+							<div class="form-group">
+								<label for="vc_ifocus" class="col-sm-3 control-label">Investment focus of your latest fund</label>
+								<div class="col-sm-9">
+									<select class="form-control form_vc_validation" id="vc_ifocus" name="vc_ifocus">
+										<option disabled selected>
+											Select option
+										</option>
+										<option value="seed">
+											Seed
+										</option>
+										<option value="early_stae">
+											Early Stage
+										</option>
+										<option value="growth">
+											Growth
+										</option>
+										<option value="late_stage">
+											Late Stage
+										</option>
+										<option value="all_stages">
+											All Stages
+										</option>
+									</select>
+									
 								</div>
 							</div>
 						</div>
 						<div class="form-group">
-							<div class="col-sm-offset-2 col-sm-10">
-								<div class="checkbox">
-									<label>
-										<input id="vc_demo" name="vc_demo" value="1" type="checkbox"> Are you interested in attending an ITP Ventures Demo Day?
-									</label>
+							<label for="vc_list" class="control-label">List of startups you have invested in at an early stage</label>
+							<div class="">
+								<textarea placeholder="" class="form-control"  name="vc_list" id="vc_list"></textarea>
+							</div>
+						</div>
+						<div class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-offset-2 col-sm-10">
+									<div class="checkbox">
+										<label>
+											<input id="vc_mentor" name="vc_mentor" value="1" type="checkbox"> Are you interested in participating as a Mentor of ITP Ventures?
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-offset-2 col-sm-10">
+									<div class="checkbox">
+										<label>
+											<input id="vc_demo" name="vc_demo" value="1" type="checkbox"> Are you interested in attending an ITP Ventures Demo Day?
+										</label>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="form-group">
-						<label for="vc_comments" class="control-label">Comments</label>
-						<div class="">
-							<textarea placeholder="" class="form-control"  id="vc_comments"></textarea>
+						<div class="form-group">
+							<label for="vc_comments" class="control-label">Comments</label>
+							<div class="">
+								<textarea placeholder="" class="form-control" name="vc_comments" id="vc_comments"></textarea>
+							</div>
 						</div>
+						
+					</div>
+					
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default col-sm-3" data-dismiss="modal">Close</button>
+						<button type="submit" class="btn form_vc_submit disabled col-sm-6 col-sm-offset-3 pull-right btn-primary">Submit Form</button>
 					</div>
 				</form>
 			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default col-sm-3" data-dismiss="modal">Close</button>
-				<button type="button" class="btn col-sm-6 col-sm-offset-3 pull-right btn-primary">Submit Form</button>
+			<div class="form_vc_step_2" style="display: none;">
+				<div class="modal-body">
+					Message sent!
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default col-sm-12" data-dismiss="modal">Close</button>
+					
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+
+
+
+
 <!-- Modal  contact -->
 <div class="modal fade" id="contactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	<div class="modal-dialog" role="document">
@@ -406,44 +437,59 @@
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				<h4 class="modal-title" id="myModalLabel">Contact us</h4>
 			</div>
-			<div class="modal-body">
-				<form >
-					<div class="form-horizontal">
-						<div class="form-group">
-							<label for="contact_name" class="col-sm-3 control-label">Name</label>
-							<div class="col-sm-9">
-								<input type="text" class="form-control" id="contact_name" placeholder="Please enter your name">
+			<div class="form_contact_step_1">
+				<form id="form_contact" action="form_contact.php" method="post">
+					<div class="modal-body">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label for="contact_name" class="col-sm-3 control-label">Name</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form_contact_validation" name="contact_name" id="contact_name" placeholder="Please enter your name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="contact_email" class="col-sm-3 control-label">Email</label>
+								<div class="col-sm-9">
+									<input type="email" class="form-control form_contact_validation" name="contact_email" id="contact_email" placeholder="Please enter your email">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="contact_phone" class="col-sm-3 control-label">Tel</label>
+								<div class="col-sm-9">
+									<input type="phone" class="form-control form_contact_validation" name="contact_phone" id="contact_phone" placeholder="Please enter your phone">
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label for="contact_comments" class="control-label col-sm-3">Comments</label>
+								<div class="col-sm-9">
+									<textarea placeholder="" class="form-control" name="contact_comments" id="contact_comments"></textarea>
+								</div>
 							</div>
 						</div>
-						<div class="form-group">
-							<label for="contact_email" class="col-sm-3 control-label">Email</label>
-							<div class="col-sm-9">
-								<input type="email" class="form-control" id="contact_email" placeholder="Please enter your email">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="contact_phone" class="col-sm-3 control-label">Tel</label>
-							<div class="col-sm-9">
-								<input type="phone" class="form-control" id="contact_phone" placeholder="Please enter your phone">
-							</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default col-sm-3" data-dismiss="modal">Close</button>
+							<button type="submit" class="form_contact_submit disabled btn col-sm-6 col-sm-offset-3 pull-right btn-primary">Submit Form</button>
 						</div>
 						
-						<div class="form-group">
-							<label for="contact_comments" class="control-label col-sm-3">Comments</label>
-							<div class="col-sm-9">
-								<textarea placeholder="" class="form-control"  id="contact_comments"></textarea>
-							</div>
-						</div>
 					</div>
 				</form>
 			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default col-sm-3" data-dismiss="modal">Close</button>
-				<button type="button" class="btn col-sm-6 col-sm-offset-3 pull-right btn-primary">Submit Form</button>
+			<div class="form_contact_step_2" style="display: none;">
+				<div class="modal-body">
+					Message sent!
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default col-sm-12" data-dismiss="modal">Close</button>
+					
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+
+
 
 
 <!-- Modal  Hiring -->
@@ -452,54 +498,78 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">Contact us</h4>
+				<h4 class="modal-title" id="myModalLabel">We are hiring!</h4>
 			</div>
-			<div class="modal-body">
-				<form >
-					<div class="form-horizontal">
-						<div class="form-group">
-							<label for="hiring_name" class="col-sm-3 control-label">Name</label>
-							<div class="col-sm-9">
-								<input type="text" class="form-control" id="hiring_name" placeholder="Please enter your name">
+			<div class="form_hiring_step_1">
+				<form id="form_hiring" action="form_hiring.php" method="post">
+					<div class="modal-body">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label for="hiring_name" class="col-sm-3 control-label">Name</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form_hiring_validation" name="hiring_name" id="hiring_name" placeholder="Please enter your name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="hiring_email" class="col-sm-3 control-label">Email</label>
+								<div class="col-sm-9">
+									<input type="email" class="form-control form_hiring_validation" name="hiring_email" id="hiring_email" placeholder="Please enter your email">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="hiring_phone" class="col-sm-3 control-label">Tel</label>
+								<div class="col-sm-9">
+									<input type="phone" class="form-control form_hiring_validation" name="hiring_phone" id="hiring_phone" placeholder="Please enter your phone">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="hiring_cv" class="col-sm-3 control-label">Upload CV</label>
+								<div class="col-sm-9">
+									<input type="file" class="form-control form_hiring_validation" name="hiring_cv" id="hiring_cv" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="hiring_comments" class="control-label col-sm-3">Comments</label>
+								<div class="col-sm-9">
+									<textarea placeholder="" class="form-control" name="hiring_comments" id="hiring_comments"></textarea>
+								</div>
 							</div>
 						</div>
-						<div class="form-group">
-							<label for="hiring_email" class="col-sm-3 control-label">Email</label>
-							<div class="col-sm-9">
-								<input type="email" class="form-control" id="hiring_email" placeholder="Please enter your email">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="hiring_phone" class="col-sm-3 control-label">Tel</label>
-							<div class="col-sm-9">
-								<input type="phone" class="form-control" id="hiring_phone" placeholder="Please enter your phone">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="hiring_cv" class="col-sm-3 control-label">Upload CV</label>
-							<div class="col-sm-9">
-								<input type="file" class="form-control" id="hiring_cv" placeholder="">
-							</div>
-						</div>						
-						<div class="form-group">
-							<label for="hiring_comments" class="control-label col-sm-3">Comments</label>
-							<div class="col-sm-9">
-								<textarea placeholder="" class="form-control"  id="hiring_comments"></textarea>
-							</div>
-						</div>
+						
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default col-sm-3" data-dismiss="modal">Close</button>
+						<button type="submit" class="form_hiring_submit disabled btn col-sm-6 col-sm-offset-3 pull-right btn-primary">Submit Form</button>
 					</div>
 				</form>
 			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default col-sm-3" data-dismiss="modal">Close</button>
-				<button type="button" class="btn col-sm-6 col-sm-offset-3 pull-right btn-primary">Submit Form</button>
+			<div class="form_hiring_step_2" style="display: none;">
+				<div class="modal-body">
+					Message sent!
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default col-sm-12" data-dismiss="modal">Close</button>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
 <script src="asset/js/jquery-2.1.3.min.js"></script>
 <script src="asset/js/jquery-migrate-1.2.1.min.js"></script>
+<!--<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>-->
 <script src="asset/bootstrap/js/bootstrap.min.js"></script>
 <script src="asset/js/owl.carousel.min.js"></script>
 <script src="asset/js/lightbox.min.js"></script>
@@ -586,7 +656,96 @@ $(document).ready(function(){
 
 
 
+ function validate_vcForm()
+  {
+    //console.log('xxx');
+    $('.form_vc_submit').addClass('disabled');
+    //$('.important_lm').show();
+    var all_good=true;
+    
+    $.each($('.form_vc_validation'), function()
+    {
+        if ($(this).val()=='')
+        {
+          all_good=false;
+          return false;
+        }
+    })
+
+    if (all_good ) {
+      $('.form_vc_submit').removeClass('disabled');
+      //$('.important_lm').hide();
+    }
+  }
+
+ function validate_contactForm()
+  {
+    //console.log('xxx');
+    $('.form_contact_submit').addClass('disabled');
+    //$('.important_lm').show();
+    var all_good=true;
+    
+    $.each($('.form_contact_validation'), function()
+    {
+        if ($(this).val()=='')
+        {
+          all_good=false;
+          return false;
+        }
+    })
+
+    if (all_good ) {
+      $('.form_contact_submit').removeClass('disabled');
+      //$('.important_lm').hide();
+    }
+  }
+
+ function validate_hiringForm()
+  {
+    //console.log('xxx');
+    $('.form_hiring_submit').addClass('disabled');
+    //$('.important_lm').show();
+    var all_good=true;
+    
+    $.each($('.form_hiring_validation'), function()
+    {
+        if ($(this).val()=='')
+        {
+          all_good=false;
+          return false;
+        }
+    })
+
+    if (all_good ) {
+      $('.form_hiring_submit').removeClass('disabled');
+      //$('.important_lm').hide();
+    }
+  }
+
   
+ function validate_resourcesForm()
+  {
+    //console.log('xxx');
+    $('.form_resources_submit').addClass('disabled');
+    //$('.important_lm').show();
+    var all_good=true;
+    
+    $.each($('.form_resources_validation'), function()
+    {
+        if ($(this).val()=='')
+        {
+          all_good=false;
+          return false;
+        }
+    })
+
+    if (all_good ) {
+      $('.form_resources_submit').removeClass('disabled');
+      //$('.important_lm').hide();
+    }
+  }
+
+
 $(document).ready(function(){
  
 $(function() {
@@ -743,6 +902,187 @@ $(function() {
 
 // END ANGGEL FORM
 
+// VC FORM
+
+      $('#form_vc').on('submit', function (e) {
+            e.preventDefault();
+
+            var oldLabel = $('#form_vc button[type="submit"]').html();
+            $('#form_vc .form_vc_submit').prop('disabled', true).text('Sending...');
+
+            $.ajax({
+             type:'POST',
+             url: 'form_vc.php',
+             data: $('#form_vc').serialize()})
+                .done(function() {
+                      $('#form_vc').get(0).reset();
+                      $('.form_vc_step_1').hide();
+                      $('.form_vc_step_2').show();
+                });
+
+      });
+
+      $('#form_vc').on('hidden.bs.modal', function (e) {
+            $('.form_vc_step_2').hide();
+            $('.form_vc_step_1').show();
+      });
+
+
+
+  $('.form_vc_validation').on('change keyup', function()
+  {
+    //console.log('dsdassda');
+    validate_vcForm();
+  });
+
+ 
+
+  $('.form_vc_submit').on('click', function()
+  {
+    if ($(this).hasClass('disabled')) return;
+    $('#form_vc').submit();
+
+  });
+
+// END VC FORM
+
+
+// CONTACT FORM
+
+      $('#form_contact').on('submit', function (e) {
+            e.preventDefault();
+
+            var oldLabel = $('#form_contact button[type="submit"]').html();
+            $('#form_contact .form_contact_submit').prop('disabled', true).text('Sending...');
+
+            $.ajax({
+             type:'POST',
+             url: 'form_contact.php',
+             data: $('#form_contact').serialize()})
+                .done(function() {
+                      $('#form_contact').get(0).reset();
+                      $('.form_contact_step_1').hide();
+                      $('.form_contact_step_2').show();
+                });
+
+      });
+
+      $('#form_contact').on('hidden.bs.modal', function (e) {
+            $('.form_contact_step_2').hide();
+            $('.form_contact_step_1').show();
+      });
+
+
+
+  $('.form_contact_validation').on('change keyup', function()
+  {
+    //console.log('dsdassda');
+    validate_contactForm();
+  });
+
+ 
+
+  $('.form_contact_submit').on('click', function()
+  {
+    if ($(this).hasClass('disabled')) return;
+    $('#form_contact').submit();
+
+  });
+
+// END CONTACT FORM
+
+
+// HIRING FORM
+
+      $('#form_hiring').on('submit', function (e) {
+            e.preventDefault();
+
+            var oldLabel = $('#form_hiring button[type="submit"]').html();
+            $('#form_hiring .form_hiring_submit').prop('disabled', true).text('Sending...');
+
+            $.ajax({
+             type:'POST',
+             url: 'form_hiring.php',
+             data: $('#form_hiring').serialize()})
+                .done(function() {
+                      $('#form_hiring').get(0).reset();
+                      $('.form_hiring_step_1').hide();
+                      $('.form_hiring_step_2').show();
+                });
+
+      });
+
+      $('#form_hiring').on('hidden.bs.modal', function (e) {
+            $('.form_hiring_step_2').hide();
+            $('.form_hiring_step_1').show();
+      });
+
+
+
+  $('.form_hiring_validation').on('change keyup', function()
+  {
+    //console.log('dsdassda');
+    validate_hiringForm();
+  });
+
+ 
+
+  $('.form_hiring_submit').on('click', function()
+  {
+    if ($(this).hasClass('disabled')) return;
+    $('#form_hiring').submit();
+
+  });
+
+// END HIRING FORM
+
+
+
+
+
+// RESOURCES FORM
+
+      $('#form_resources').on('submit', function (e) {
+            e.preventDefault();
+
+            var oldLabel = $('#form_resources button[type="submit"]').html();
+            $('#form_resources .form_resources_submit').prop('disabled', true).text('Sending...');
+
+            $.ajax({
+             type:'POST',
+             url: 'form_resources.php',
+             data: $('#form_resources').serialize()})
+                .done(function() {
+                      $('#form_resources').get(0).reset();
+                      $('.form_resources_step_1').hide();
+                      $('.form_resources_step_2').show();
+                });
+
+      });
+
+      $('#form_resources').on('hidden.bs.modal', function (e) {
+            $('.form_resources_step_2').hide();
+            $('.form_resources_step_1').show();
+      });
+
+
+
+  $('.form_resources_validation').on('change keyup', function()
+  {
+    //console.log('dsdassda');
+    validate_resourcesForm();
+  });
+
+ 
+
+  $('.form_resources_submit').on('click', function()
+  {
+    if ($(this).hasClass('disabled')) return;
+    $('#form_resources').submit();
+
+  });
+
+// END RESOURCES FORM
 
 });
 

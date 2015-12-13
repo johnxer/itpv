@@ -18,11 +18,11 @@ require_once('swiftmailer/swift_required.php');
   ->setFrom(array('info@itpventures.com' => 'Thank you for applying to ITP Ventures'))
 
   // Set the To addresses with an associative array
-  ->setTo(array($_POST['vc_email']));
+  ->setTo(array($_POST['resources_email']));
 
   // Give it a body
 	
-	$message->setBody(file_get_contents('to_subscriber_vc.php'), 'text/html');
+	$message->setBody(file_get_contents('to_subscriber_resources.php'), 'text/html');
 
 	$result = $mailer->send($message);
 
@@ -35,16 +35,16 @@ require_once('swiftmailer/swift_required.php');
 	$mailer = Swift_Mailer::newInstance($transport);
 	$message = Swift_Message::newInstance()
 	 // Give the message a subject
-  ->setSubject('ITPV VC Form Submit')
+  ->setSubject('ITPV Resources Form Submit')
   // Set the From address with an associative array
-  ->setFrom(array('info@itpventures.com' => 'ITPV VC Form Submit'))
+  ->setFrom(array('info@itpventures.com' => 'ITPV Resources Form Submit'))
   // Set the To addresses with an associative array
   ->setTo($send_to_admin);
   // Give it a body
-	$the_body=file_get_contents('to_admin_vc.php');
+	$the_body=file_get_contents('to_admin_resources.php');
 
-	$key_array=['{name}','{title}','{company}','{email}','{phone}',{'vc_ifocus'},'{vc_startups}','{vc_mentor}','{vc_demo}','{vc_comments}'];
-	$value_array=[$_POST['vc_name'],$_POST['vc_title'],$_POST['vc_cname'],$_POST['vc_ifocus'],$_POST['vc_email'],$_POST['vc_phone'],$_POST['vc_list'],$_POST['vc_mentor'],$_POST['vc_demo'],$_POST['vc_comments']];
+	$key_array=['{name}','{email}','{phone}','{resources_ifocus}','{resources_comments}'];
+	$value_array=[$_POST['resources_name'],$_POST['resources_email'],$_POST['resources_phone'],$_POST['resources_ifocus'],$_POST['resources_comments']];
 	$the_body=str_replace($key_array, $value_array, $the_body);
 
 

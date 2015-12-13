@@ -29,30 +29,31 @@
                     <p>Many of our Intrapreneur startups are looking for key skill sets to complement their team. Some of them are also looking for external resources such as SW development, legal, accounting etc. Let us know if you would like to be considered by one our exciting Intrapreneur startups!</p>
                 </div>
                 <div class="col-md-5">
-                <form>
+            <div class="form_resources_step_1">
+                <form id="form_resources" action="form_resources.php" method="post">
                     <div class="form-horizontal">
                         <div class="form-group">
                             <label for="resources_name" class="col-sm-3 control-label">Name</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" id="resources_name" placeholder="Please enter your name">
+                                <input type="text" class="form-control form_resources_validation" name="resources_name" id="resources_name" placeholder="Please enter your name">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="resources_email" class="col-sm-3 control-label">Email</label>
                             <div class="col-sm-9">
-                                <input type="email" class="form-control" id="resources_email" placeholder="Please enter your email">
+                                <input type="email" class="form-control form_resources_validation" name="resources_email" id="resources_email" placeholder="Please enter your email">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="resources_phone" class="col-sm-3 control-label">Tel</label>
                             <div class="col-sm-9">
-                                <input type="phone" class="form-control" id="resources_phone" placeholder="Please enter your phone">
+                                <input type="phone" class="form-control form_resources_validation" name="resources_phone" id="resources_phone" placeholder="Please enter your phone">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="resources_ifocus" class="col-sm-3 control-label">Interest</label>
                             <div class="col-sm-9">
-                                <select class="form-control" id="resources_ifocus">
+                                <select class="form-control form_resources_validation" id="resources_ifocus" name="resources_ifocus">
                                     <option disabled selected>
                                         Select option
                                     </option>
@@ -69,16 +70,27 @@
                         <div class="form-group">
                             <label for="resources_comments" class="col-sm-3 control-label">Comments</label>
                             <div class="col-sm-9">
-                                <textarea placeholder="" class="form-control"  id="resources_comments"></textarea>
+                                <textarea placeholder="" class="form-control" name="resources_ifocus resources_comments" id="resources_comments"></textarea>
                             </div>
                         </div>                  
                         <div class="form-group">      
                         <div class="col-sm-9 col-sm-offset-3">
-                                <button type="submit" class="btn-block btn btn-primary">Submit</button>
+                                <button type="submit" class="form_resources_submit disabled btn-block btn btn-primary">Submit</button>
                                 </div>
                                 </div>
                     </div>
                 </form>
+                </div>
+            <div class="form_resources_step_2" style="display: none;">
+                <div class="modal-body">
+                    Message sent!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default col-sm-12" data-dismiss="modal">Close</button>
+                    
+                </div>
+            </div>
+
                 </div>
             </div>
         </div>
