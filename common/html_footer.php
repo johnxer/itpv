@@ -1019,6 +1019,7 @@ $(function() {
       $('#enterpriseForm').on('hidden.bs.modal', function (e) {
             $('.form_enterprise_step_2').hide();
             $('.form_enterprise_step_1').show();
+            $('#form_enterprise .form_enterprise_submit').text('Submit Form');
       });
 
 
@@ -1066,6 +1067,7 @@ $(function() {
       $('#entrepreneurForm').on('hidden.bs.modal', function (e) {
             $('.form_entrepreneur_step_2').hide();
             $('.form_entrepreneur_step_1').show();
+            $('#form_entrepreneur .form_entrepreneur_submit').text('Submit Form');
       });
 
 
@@ -1112,6 +1114,7 @@ $(function() {
       $('#angelForm').on('hidden.bs.modal', function (e) {
             $('.form_angel_step_2').hide();
             $('.form_angel_step_1').show();
+            $('#form_angel .form_angel_submit').text('Submit Form');
       });
 
 
@@ -1156,6 +1159,7 @@ $(function() {
       $('#vcForm').on('hidden.bs.modal', function (e) {
             $('.form_vc_step_2').hide();
             $('.form_vc_step_1').show();
+            $('#form_vc .form_vc_submit').text('Submit Form');
       });
 
 
@@ -1201,6 +1205,7 @@ $(function() {
       $('#contactForm').on('hidden.bs.modal', function (e) {
             $('.form_contact_step_2').hide();
             $('.form_contact_step_1').show();
+            $('#form_contact .form_contact_submit').text('Submit Form');
       });
 
 
@@ -1259,6 +1264,7 @@ $('#form_hiring').ajaxForm(
       $('#hiringForm').on('hidden.bs.modal', function (e) {
             $('.form_hiring_step_2').hide();
             $('.form_hiring_step_1').show();
+            $('#form_hiring .form_hiring_submit').text('Submit Form');
       });
 
 
@@ -1307,6 +1313,7 @@ $('#form_hiring').ajaxForm(
       $('#resourcesForm').on('hidden.bs.modal', function (e) {
             $('.form_resources_step_2').hide();
             $('.form_resources_step_1').show();
+            $('#form_resources .form_resources_submit').text('Submit Form');
       });
 
 
@@ -1353,6 +1360,7 @@ $('#form_hiring').ajaxForm(
       $('#mentorForm').on('hidden.bs.modal', function (e) {
             $('.form_mentor_step_2').hide();
             $('.form_mentor_step_1').show();
+            $('#form_mentor .form_mentor_submit').text('Submit Form');
       });
 
 
@@ -1399,6 +1407,7 @@ $('#form_hiring').ajaxForm(
       $('#demoForm').on('hidden.bs.modal', function (e) {
             $('.form_demo_step_2').hide();
             $('.form_demo_step_1').show();
+            $('#form_demo .form_demo_submit').text('Submit Form');
       });
 
 
