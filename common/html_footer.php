@@ -26,7 +26,7 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">Apply as Enterprise</h4>
+				<h4 class="modal-title" id="myModalLabel">Enterprise Application</h4>
 			</div>
 			<div class="form_enterprise_step_1">
 				<form id="form_enterprise" action="form_enterprise.php" method="post">
@@ -96,7 +96,7 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">Apply as Entrepreneur</h4>
+				<h4 class="modal-title" id="myModalLabel">Entrepreneur Application</h4>
 			</div>
 			<div class="form_entrepreneur_step_1">
 				<form id="form_entrepreneur" action="form_entrepreneur.php" method="post">
@@ -192,7 +192,7 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">Apply as Angel</h4>
+				<h4 class="modal-title" id="myModalLabel">Angel Application</h4>
 			</div>
 			<div class="form_angel_step_1">
 				<form id="form_angel" action="form_angel.php" method="post">
@@ -286,7 +286,7 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">Apply as VC</h4>
+				<h4 class="modal-title" id="myModalLabel">VC Application</h4>
 			</div>
 			<div class="form_vc_step_1">
 				<form id="form_vc" action="form_vc.php" method="post">
@@ -530,7 +530,7 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">Apply to become a Mentor</h4>
+				<h4 class="modal-title" id="myModalLabel">Mentor Application</h4>
 			</div>
 			<div class="form_mentor_step_1">
 				<form id="form_mentor" action="form_mentor.php" method="post">
@@ -628,7 +628,7 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">Apply to Attend a Demo Day</h4>
+				<h4 class="modal-title" id="myModalLabel">Demo Day Application</h4>
 			</div>
 			<div class="form_demo_step_1">
 				<form id="form_demo" action="form_demo.php" method="post">
