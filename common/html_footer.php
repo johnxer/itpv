@@ -1002,7 +1002,7 @@ $(function() {
             e.preventDefault();
 
             var oldLabel = $('#form_enterprise button[type="submit"]').html();
-            $('#form_enterprise .form_enterprise_submit').prop('disabled', true).text('Sending...');
+            $('#form_enterprise .form_enterprise_submit').addClass("disabled").text('Sending...');
 
             $.ajax({
              type:'POST',
@@ -1049,7 +1049,7 @@ $(function() {
             e.preventDefault();
 
             var oldLabel = $('#form_entrepreneur button[type="submit"]').html();
-            $('#form_entrepreneur .form_entrepreneur_submit').prop('disabled', true).text('Sending...');
+            $('#form_entrepreneur .form_entrepreneur_submit').addClass("disabled").text('Sending...');
 
             $.ajax({
              type:'POST',
@@ -1063,7 +1063,7 @@ $(function() {
 
       });
 
-      $('#form_entrepreneur').on('hidden.bs.modal', function (e) {
+      $('#entrepreneurForm').on('hidden.bs.modal', function (e) {
             $('.form_entrepreneur_step_2').hide();
             $('.form_entrepreneur_step_1').show();
       });
@@ -1095,7 +1095,7 @@ $(function() {
             e.preventDefault();
 
             var oldLabel = $('#form_angel button[type="submit"]').html();
-            $('#form_angel .form_angel_submit').prop('disabled', true).text('Sending...');
+            $('#form_angel .form_angel_submit').addClass("disabled").text('Sending...');
 
             $.ajax({
              type:'POST',
@@ -1109,7 +1109,7 @@ $(function() {
 
       });
 
-      $('#form_angel').on('hidden.bs.modal', function (e) {
+      $('#angelForm').on('hidden.bs.modal', function (e) {
             $('.form_angel_step_2').hide();
             $('.form_angel_step_1').show();
       });
@@ -1139,7 +1139,7 @@ $(function() {
             e.preventDefault();
 
             var oldLabel = $('#form_vc button[type="submit"]').html();
-            $('#form_vc .form_vc_submit').prop('disabled', true).text('Sending...');
+            $('#form_vc .form_vc_submit').addClass("disabled").text('Sending...');
 
             $.ajax({
              type:'POST',
@@ -1153,7 +1153,7 @@ $(function() {
 
       });
 
-      $('#form_vc').on('hidden.bs.modal', function (e) {
+      $('#vcForm').on('hidden.bs.modal', function (e) {
             $('.form_vc_step_2').hide();
             $('.form_vc_step_1').show();
       });
@@ -1184,7 +1184,7 @@ $(function() {
             e.preventDefault();
 
             var oldLabel = $('#form_contact button[type="submit"]').html();
-            $('#form_contact .form_contact_submit').prop('disabled', true).text('Sending...');
+            $('#form_contact .form_contact_submit').addClass("disabled").text('Sending...');
 
             $.ajax({
              type:'POST',
@@ -1198,7 +1198,7 @@ $(function() {
 
       });
 
-      $('#form_contact').on('hidden.bs.modal', function (e) {
+      $('#contactForm').on('hidden.bs.modal', function (e) {
             $('.form_contact_step_2').hide();
             $('.form_contact_step_1').show();
       });
@@ -1229,7 +1229,7 @@ $('#form_hiring').ajaxForm(
     	beforeSerialize:function()
     	{
     		 var oldLabel = $('#form_hiring button[type="submit"]').html();
-            $('#form_hiring .form_hiring_submit').prop('disabled', true).text('Sending...');
+            $('#form_hiring .form_hiring_submit').addClass("disabled").text('Sending...');
     	},
       success: function()
       {
@@ -1256,7 +1256,7 @@ $('#form_hiring').ajaxForm(
 
       // });
 
-      $('#form_hiring').on('hidden.bs.modal', function (e) {
+      $('#hiringForm').on('hidden.bs.modal', function (e) {
             $('.form_hiring_step_2').hide();
             $('.form_hiring_step_1').show();
       });
@@ -1290,7 +1290,7 @@ $('#form_hiring').ajaxForm(
             e.preventDefault();
 
             var oldLabel = $('#form_resources button[type="submit"]').html();
-            $('#form_resources .form_resources_submit').prop('disabled', true).text('Sending...');
+            $('#form_resources .form_resources_submit').addClass("disabled").text('Sending...');
 
             $.ajax({
              type:'POST',
@@ -1304,7 +1304,7 @@ $('#form_hiring').ajaxForm(
 
       });
 
-      $('#form_resources').on('hidden.bs.modal', function (e) {
+      $('#resourcesForm').on('hidden.bs.modal', function (e) {
             $('.form_resources_step_2').hide();
             $('.form_resources_step_1').show();
       });
@@ -1336,7 +1336,7 @@ $('#form_hiring').ajaxForm(
             e.preventDefault();
 
             var oldLabel = $('#form_mentor button[type="submit"]').html();
-            $('#form_mentor .form_mentor_submit').prop('disabled', true).text('Sending...');
+            $('#form_mentor .form_mentor_submit').addClass("disabled").text('Sending...');
 
             $.ajax({
              type:'POST',
@@ -1350,7 +1350,7 @@ $('#form_hiring').ajaxForm(
 
       });
 
-      $('#form_mentor').on('hidden.bs.modal', function (e) {
+      $('#mentorForm').on('hidden.bs.modal', function (e) {
             $('.form_mentor_step_2').hide();
             $('.form_mentor_step_1').show();
       });
@@ -1382,7 +1382,7 @@ $('#form_hiring').ajaxForm(
             e.preventDefault();
 
             var oldLabel = $('#form_demo button[type="submit"]').html();
-            $('#form_demo .form_demo_submit').prop('disabled', true).text('Sending...');
+            $('#form_demo .form_demo_submit').addClass("disabled").text('Sending...');
 
             $.ajax({
              type:'POST',
@@ -1396,7 +1396,7 @@ $('#form_hiring').ajaxForm(
 
       });
 
-      $('#form_demo').on('hidden.bs.modal', function (e) {
+      $('#demoForm').on('hidden.bs.modal', function (e) {
             $('.form_demo_step_2').hide();
             $('.form_demo_step_1').show();
       });
