@@ -1016,7 +1016,7 @@ $(function() {
 
       });
 
-      $('#form_enterprise').on('hidden.bs.modal', function (e) {
+      $('#enterpriseForm').on('hidden.bs.modal', function (e) {
             $('.form_enterprise_step_2').hide();
             $('.form_enterprise_step_1').show();
       });
