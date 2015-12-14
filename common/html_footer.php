@@ -470,7 +470,7 @@
 				<h4 class="modal-title" id="myModalLabel">We are hiring!</h4>
 			</div>
 			<div class="form_hiring_step_1">
-				<form id="form_hiring" action="form_hiring.php" method="post">
+				<form id="form_hiring" action="form_hiring.php" method="post" enctype="multipart/form-data">
 					<div class="modal-body">
 						<div class="form-horizontal">
 							<div class="form-group">
@@ -739,6 +739,7 @@
 <script src="asset/js/jquery.nicescroll.min.js"></script>
 <script src="asset/js/map.js"></script>
 <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.js"></script> 
 <!--<script src="asset/js/script.js"></script>-->
 <script>
 $(document).ready(function(){
@@ -1223,24 +1224,37 @@ $(function() {
 
 
 // HIRING FORM
-
-      $('#form_hiring').on('submit', function (e) {
-            e.preventDefault();
-
-            var oldLabel = $('#form_hiring button[type="submit"]').html();
+$('#form_hiring').ajaxForm(
+    {
+    	beforeSerialize:function()
+    	{
+    		 var oldLabel = $('#form_hiring button[type="submit"]').html();
             $('#form_hiring .form_hiring_submit').prop('disabled', true).text('Sending...');
-
-            $.ajax({
-             type:'POST',
-             url: 'form_hiring.php',
-             data: $('#form_hiring').serialize()})
-                .done(function() {
-                      $('#form_hiring').get(0).reset();
-                      $('.form_hiring_step_1').hide();
+    	},
+      success: function()
+      {
+        //success
+       $('#form_hiring').get(0).reset();
+       $('.form_hiring_step_1').hide();
                       $('.form_hiring_step_2').show();
-                });
+      }
+    })
+      // $('#form_hiring').on('submit', function (e) {
+      //       e.preventDefault();
 
-      });
+           
+
+      //       $.ajax({
+      //        type:'POST',
+      //        url: 'form_hiring.php',
+      //        data: $('#form_hiring').serialize()})
+      //           .done(function() {
+      //                 $('#form_hiring').get(0).reset();
+      //                 $('.form_hiring_step_1').hide();
+      //                 $('.form_hiring_step_2').show();
+      //           });
+
+      // });
 
       $('#form_hiring').on('hidden.bs.modal', function (e) {
             $('.form_hiring_step_2').hide();

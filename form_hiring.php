@@ -43,12 +43,12 @@ require_once('swiftmailer/swift_required.php');
   // Give it a body
 	$the_body=file_get_contents('to_admin_hiring.php');
 
-	$key_array=array('{name}','{email}','{phone}','{hiring_cv}','{hiring_comments}');
-	$value_array=array($_POST['hiring_name'],$_POST['hiring_email'],$_POST['hiring_phone'],$POST['hiring_cv'],$_POST['hiring_comments']);
+	$key_array=array('{name}','{email}','{phone}','{hiring_comments}');
+	$value_array=array($_POST['hiring_name'],$_POST['hiring_email'],$_POST['hiring_phone'],$_POST['hiring_comments']);
 	$the_body=str_replace($key_array, $value_array, $the_body);
 
 
 	$message->setBody($the_body, 'text/html');
-
+$message->attach(Swift_Attachment::fromPath($_FILES['hiring_cv']['tmp_name'])->setFilename($_FILES['hiring_cv']['name']));
 	$result = $mailer->send($message);
  
